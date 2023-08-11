@@ -14,7 +14,7 @@ function playMusic() {
     var player = document.getElementById("audio");
     play();
     function play(){
-    swal("欢迎光临玲珑塔官网\n请问是否开启音乐呢？", {
+    swal("欢迎光临  艾峰科技官网\n请问是否开启音乐呢？", {
             buttons: {
                 cancel: "开启",
                 allow: "关闭"
