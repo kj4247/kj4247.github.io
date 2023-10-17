@@ -1,0 +1,1815 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="Referrer" content="origin" />
+
+		<style>
+			:root {
+				--Maincolor: #409EFF !important;
+				--MaincolorHover: #409EFF !important;
+				--fontSelectedColor: #3390ff !important;
+			}
+
+			#nprogress .bar {
+				background: var(--Maincolor) !important;
+			}
+		</style>
+
+		<link rel="stylesheet" type="text/css"
+			href="https://xy-cdn.lovestu.com/corepress/static/lib/font/harmonyos/font.css">
+		<style>
+			html,
+			textarea {
+				font-family: harmonyos, PingFang\ SC, Hiragino\ Sans\ GB, Microsoft\ YaHei, STHeiti, WenQuanYi\ Micro\ Hei, Helvetica, Arial, sans-serif !important;
+			}
+		</style>
+		<link rel="stylesheet"
+			href="https://xy-cdn.lovestu.com/corepress/static/lib/fontawesome5pro/css/all.min.css?v=1.5.8">
+		<style id='classic-theme-styles-inline-css' type='text/css'>
+			/*! This file is auto-generated */
+			.wp-block-button__link {
+				color: #fff;
+				background-color: #32373c;
+				border-radius: 9999px;
+				box-shadow: none;
+				text-decoration: none;
+				padding: calc(.667em + 2px) calc(1.333em + 2px);
+				font-size: 1.125em
+			}
+
+			.wp-block-file__button {
+				background: #32373c;
+				color: #fff;
+				text-decoration: none
+			}
+		</style>
+		<style id='global-styles-inline-css' type='text/css'>
+			body {
+				--wp--preset--color--black: #000000;
+				--wp--preset--color--cyan-bluish-gray: #abb8c3;
+				--wp--preset--color--white: #ffffff;
+				--wp--preset--color--pale-pink: #f78da7;
+				--wp--preset--color--vivid-red: #cf2e2e;
+				--wp--preset--color--luminous-vivid-orange: #ff6900;
+				--wp--preset--color--luminous-vivid-amber: #fcb900;
+				--wp--preset--color--light-green-cyan: #7bdcb5;
+				--wp--preset--color--vivid-green-cyan: #00d084;
+				--wp--preset--color--pale-cyan-blue: #8ed1fc;
+				--wp--preset--color--vivid-cyan-blue: #0693e3;
+				--wp--preset--color--vivid-purple: #9b51e0;
+				--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+				--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+				--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+				--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+				--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+				--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+				--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+				--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+				--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+				--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+				--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+				--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+				--wp--preset--font-size--small: 13px;
+				--wp--preset--font-size--medium: 20px;
+				--wp--preset--font-size--large: 36px;
+				--wp--preset--font-size--x-large: 42px;
+				--wp--preset--spacing--20: 0.44rem;
+				--wp--preset--spacing--30: 0.67rem;
+				--wp--preset--spacing--40: 1rem;
+				--wp--preset--spacing--50: 1.5rem;
+				--wp--preset--spacing--60: 2.25rem;
+				--wp--preset--spacing--70: 3.38rem;
+				--wp--preset--spacing--80: 5.06rem;
+				--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+				--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+				--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+				--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+				--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+			}
+
+			:where(.is-layout-flex) {
+				gap: 0.5em;
+			}
+
+			:where(.is-layout-grid) {
+				gap: 0.5em;
+			}
+
+			body .is-layout-flow>.alignleft {
+				float: left;
+				margin-inline-start: 0;
+				margin-inline-end: 2em;
+			}
+
+			body .is-layout-flow>.alignright {
+				float: right;
+				margin-inline-start: 2em;
+				margin-inline-end: 0;
+			}
+
+			body .is-layout-flow>.aligncenter {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained>.alignleft {
+				float: left;
+				margin-inline-start: 0;
+				margin-inline-end: 2em;
+			}
+
+			body .is-layout-constrained>.alignright {
+				float: right;
+				margin-inline-start: 2em;
+				margin-inline-end: 0;
+			}
+
+			body .is-layout-constrained>.aligncenter {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+				max-width: var(--wp--style--global--content-size);
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained>.alignwide {
+				max-width: var(--wp--style--global--wide-size);
+			}
+
+			body .is-layout-flex {
+				display: flex;
+			}
+
+			body .is-layout-flex {
+				flex-wrap: wrap;
+				align-items: center;
+			}
+
+			body .is-layout-flex>* {
+				margin: 0;
+			}
+
+			body .is-layout-grid {
+				display: grid;
+			}
+
+			body .is-layout-grid>* {
+				margin: 0;
+			}
+
+			:where(.wp-block-columns.is-layout-flex) {
+				gap: 2em;
+			}
+
+			:where(.wp-block-columns.is-layout-grid) {
+				gap: 2em;
+			}
+
+			:where(.wp-block-post-template.is-layout-flex) {
+				gap: 1.25em;
+			}
+
+			:where(.wp-block-post-template.is-layout-grid) {
+				gap: 1.25em;
+			}
+
+			.has-black-color {
+				color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-color {
+				color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-color {
+				color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-color {
+				color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-color {
+				color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-color {
+				color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-color {
+				color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-color {
+				color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-color {
+				color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-color {
+				color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-color {
+				color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-color {
+				color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-black-background-color {
+				background-color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-background-color {
+				background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-background-color {
+				background-color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-background-color {
+				background-color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-background-color {
+				background-color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-background-color {
+				background-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-background-color {
+				background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-background-color {
+				background-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-black-border-color {
+				border-color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-border-color {
+				border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-border-color {
+				border-color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-border-color {
+				border-color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-border-color {
+				border-color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-border-color {
+				border-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-border-color {
+				border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-border-color {
+				border-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+				background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+			}
+
+			.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+				background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+			}
+
+			.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+				background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+				background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+			}
+
+			.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+				background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+			}
+
+			.has-cool-to-warm-spectrum-gradient-background {
+				background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+			}
+
+			.has-blush-light-purple-gradient-background {
+				background: var(--wp--preset--gradient--blush-light-purple) !important;
+			}
+
+			.has-blush-bordeaux-gradient-background {
+				background: var(--wp--preset--gradient--blush-bordeaux) !important;
+			}
+
+			.has-luminous-dusk-gradient-background {
+				background: var(--wp--preset--gradient--luminous-dusk) !important;
+			}
+
+			.has-pale-ocean-gradient-background {
+				background: var(--wp--preset--gradient--pale-ocean) !important;
+			}
+
+			.has-electric-grass-gradient-background {
+				background: var(--wp--preset--gradient--electric-grass) !important;
+			}
+
+			.has-midnight-gradient-background {
+				background: var(--wp--preset--gradient--midnight) !important;
+			}
+
+			.has-small-font-size {
+				font-size: var(--wp--preset--font-size--small) !important;
+			}
+
+			.has-medium-font-size {
+				font-size: var(--wp--preset--font-size--medium) !important;
+			}
+
+			.has-large-font-size {
+				font-size: var(--wp--preset--font-size--large) !important;
+			}
+
+			.has-x-large-font-size {
+				font-size: var(--wp--preset--font-size--x-large) !important;
+			}
+
+			.wp-block-navigation a:where(:not(.wp-element-button)) {
+				color: inherit;
+			}
+
+			:where(.wp-block-post-template.is-layout-flex) {
+				gap: 1.25em;
+			}
+
+			:where(.wp-block-post-template.is-layout-grid) {
+				gap: 1.25em;
+			}
+
+			:where(.wp-block-columns.is-layout-flex) {
+				gap: 2em;
+			}
+
+			:where(.wp-block-columns.is-layout-grid) {
+				gap: 2em;
+			}
+
+			.wp-block-pullquote {
+				font-size: 1.5em;
+				line-height: 1.6;
+			}
+		</style>
+		<link rel='stylesheet' id='fancybox_css-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/lib/fancybox/fancybox.css?ver=55'
+			type='text/css' media='all' />
+		<link rel='stylesheet' id='css_main-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/main.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='css_pros-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/pros.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='embed-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/embed.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='animate-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/animate.min.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='comment-module-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/comment-module.css?ver=55'
+			type='text/css' media='all' />
+		<link rel='stylesheet' id='post-content-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/post-content.css?ver=55'
+			type='text/css' media='all' />
+		<link rel='stylesheet' id='css_main_mobile-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/main-mobile.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='pro_css_main-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/main-pro.css?ver=55' type='text/css'
+			media='all' />
+		<link rel='stylesheet' id='pro_main_mobile-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/main-mobile-pro.css?ver=55'
+			type='text/css' media='all' />
+		<link rel='stylesheet' id='corepress-cursor-css'
+			href='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/css/cursor.css?ver=55' type='text/css'
+			media='all' />
+		<style id='corepress-cursor-inline-css' type='text/css'>
+			:root {
+				--cur-default: url(https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/img/cur/macblack/arrow.png);
+				--cur-pointer: url(https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/img/cur/macblack/link.png)
+			}
+		</style>
+		<script type='text/javascript' id='tools-js-extra'>
+			/* <![CDATA[ */
+			var tools = {
+				"index": "",
+				"page": "1",
+				"post": ""
+			};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/tools.js?ver=55' id='tools-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/jquery.min.js?ver=55'
+			id='corepress_jquery-js'></script>
+		<script type='text/javascript' id='index_js-js-extra'>
+			/* <![CDATA[ */
+			var set = {
+				"is_single": "",
+				"is_page": "1",
+				"is_home": "",
+				"ajaxurl": "https:\/\/www.ahfi.cn\/wp-admin\/admin-ajax.php",
+				"logourl": "https:\/\/www.ahfi.cn\/wp-content\/uploads\/2023\/08\/logo.png",
+				"imgurl": "https:\/\/www.ahfi.cn\/wp-content\/themes\/CorePress-Pro\/static\/img",
+				"themeColor": "#409EFF",
+				"reprint": {
+					"msg": "\u590d\u5236\u6210\u529f\uff0c\u8f6c\u8f7d\u8bf7\u4fdd\u7559\u672c\u7ad9\u94fe\u63a5",
+					"copylenopen": 0,
+					"copylen": 0,
+					"addurl": 1,
+					"siteurl": "https:\/\/www.ahfi.cn\/tools\/colorcode",
+					"open": 1
+				},
+				"module": {
+					"imglightbox": 1,
+					"imglazyload": 1
+				},
+				"post_id": "61",
+				"corepress_post_meta": {
+					"catalog": 0,
+					"seo": {
+						"open": 0,
+						"text": "",
+						"keywords": "",
+						"title": "",
+						"description": ""
+					},
+					"postrighttag": {
+						"open": 0,
+						"color": "#409EFF"
+					},
+					"postshow": "0",
+					"thumbnail": "",
+					"closesummary": 0,
+					"subtitle": "",
+					"listtitle": "",
+					"listtitlecolor": "",
+					"subtitlecolor": "#409EFF",
+					"closesidebar": 1
+				},
+				"theme": {
+					"sidebar_position": 1,
+					"loadbar": 0
+				},
+				"poster_img": "",
+				"index": {
+					"linksicon": 0,
+					"chromeiconurl": "https:\/\/www.ahfi.cn\/wp-content\/themes\/CorePress-Pro\/static\/img\/chrome.png"
+				},
+				"is_page_template": "",
+				"has_corepress_video": "0",
+				"themeversion": "55",
+				"autodark": "0",
+				"dark": "0",
+				"darklogourl": "https:\/\/www.ahfi.cn\/wp-content\/uploads\/2023\/08\/logo.png",
+				"darkcss": "https:\/\/www.ahfi.cn\/wp-content\/themes\/CorePress-Pro\/static\/css\/dark.css",
+				"popwindow": "0",
+				"popwindowhtml": "DQogICAgPGRpdiBjbGFzcz0iY3AtcG9wLXdpbmRvdyI+DQogICAgPGRpdiBjbGFzcz0iY3AtcG9wLXdpbmRvdy10aXRsZSI+DQogICAgPGkgY2xhc3M9ImZhciBmYS10aW1lcy1jaXJjbGUgY3AtcG9wLWNsb3NlIiBvbmNsaWNrPSJjbG9zZV9wb3Bfd2luZG93KCkiPjwvaT4NCiAgICA8ZGl2IHN0eWxlPSJjb2xvcjojZmZmO2JhY2tncm91bmQtY29sb3I6IzQwOWVmZiI+PGkgY2xhc3M9ImZhciBmYS1oZWFydCI+PC9pPiDlvLnnqpfmoIfpopg8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjcC1wb3Atd2luZG93LWNvbnRlbnQiPg0KICAgIOaIkeaYr+S4gOS4quWFrOWRiuW8ueeql++8jOaUr+aMgUhUTUzlhoXlrrkNCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjcC1wb3Atd2luZG93LWJ0bnMiPg0KICAgIDxidXR0b24gY2xhc3M9ImNwLXBvcC1idG4iIG9uY2xpY2s9ImNsb3NlX3BvcF93aW5kb3coKSI+56Gu5a6aPC9idXR0b24+DQogICAgPC9kaXY+DQogICAgPC9kaXY+DQogICAg",
+				"popwindowtime": "1",
+				"popwindowmd5": "1692517629185"
+			};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/index.js?ver=55' id='index_js-js'>
+		</script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/lazyload.min.js?ver=55'
+			id='corepress_jquery_lazyload-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/qrcode.min.js?ver=55'
+			id='corepress_jquery_qrcode-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/base64.js?ver=55' id='base64-js'>
+		</script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/html2canvas.min.js?ver=55'
+			id='corepress_html2canvas-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/js/clipboard.min.js?ver=55'
+			id='corepress_clipboard_js-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/lib/fancybox/fancybox.umd.js?ver=55'
+			id='fancybox-js'></script>
+		<script type='text/javascript'
+			src='https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/lib/fancybox/init.js?ver=55'
+			id='fancybox_init-js'></script>
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ahfi.cn/xmlrpc.php?rsd" />
+
+		<link rel="canonical" href="https://www.ahfi.cn/tools/colorcode" />
+		<link rel='shortlink' href='https://www.ahfi.cn/?p=61' />
+		<link rel="alternate" type="application/json+oembed"
+			href="https://www.ahfi.cn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ahfi.cn%2Ftools%2Fcolorcode" />
+		<link rel="alternate" type="text/xml+oembed"
+			href="https://www.ahfi.cn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ahfi.cn%2Ftools%2Fcolorcode&#038;format=xml" />
+		<style>
+			/* 设置文章图标大小 */
+			.ios-image {
+				width: 100px;
+				height: 100px;
+			}
+
+			/* 设置文章大图放小 */
+			.image-small {
+				width: 400px;
+			}
+
+			/* 首页个人资料文字居中 */
+			.widget-admin-author-introduce-text {
+				text-align: center;
+			}
+
+			/*增强表格*/
+			table,
+			th,
+			td {
+				border-collapse: collapse;
+				border: 1px solid black;
+			}
+		</style>
+		<style>
+			.post-content-post img {
+				border-radius: 10px;
+			}
+		</style>
+		<style>
+			.post-content-content img {
+				box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+			}
+		</style>
+		<script src="https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/lib/highlight/highlight.min.js?v=1.5.8">
+		</script>
+		<link rel="stylesheet"
+			href="https://www.ahfi.cn/wp-content/themes/CorePress-Pro/static/lib/highlight/style/corepress-dark.css?v=1.5.8">
+		<meta name="keywords" content="" />
+		<meta name="description" content="Ctrl+F5搜索颜色（电脑操作）
+
+
+
+颜色
+颜色名
+中文名称
+Hex RGB
+十进制 Decimal
+颜色
+
+
+
+LightPink
+浅粉红
+#FFB6C1
+255,182,193
+
+
+
+
+Pink
+粉红
+#FFC0CB
+255,192,203
+
+
+
+
+Crimson
+深…" />
+
+
+
+	</head>
+	<body>
+		<style>
+			#app {
+				display: none;
+			}
+
+			body .app-show {
+				display: flex !important;
+			}
+		</style>
+		<div id="app">
+			<header>
+			</header>
+			<main class="container">
+				<div class="html-main">
+					<style>
+						body .post-info-right {
+							display: none;
+						}
+					</style>
+					<div class="post-main post-main-closesidebar" style="flex-basis: 100%;">
+						<div class="post-content-body">
+							<div class="post-content">
+								<div class="post-content-post">
+									<div class="post-content-content">
+										<h2>Ctrl+F5搜索颜色（电脑操作）</h2>
+										<table border="1">
+											<tbody>
+												<tr>
+													<td width="15%" align="middle">颜色</td>
+													<td align="middle">颜色名</td>
+													<td height="28" align="middle">中文名称</td>
+													<td align="middle">Hex RGB</td>
+													<td align="middle">十进制 Decimal</td>
+													<td width="15%" align="middle">颜色</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffb6c1"></td>
+													<td bgcolor="#dedede">LightPink</td>
+													<td bgcolor="#dedede" height="28">浅粉红</td>
+													<td bgcolor="#c0c0c0">#FFB6C1</td>
+													<td bgcolor="#c0c0c0">255,182,193</td>
+													<td bgcolor="#ffb6c1"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffc0cb"></td>
+													<td bgcolor="#dedede">Pink</td>
+													<td bgcolor="#dedede" height="28">粉红</td>
+													<td bgcolor="#c0c0c0">#FFC0CB</td>
+													<td bgcolor="#c0c0c0">255,192,203</td>
+													<td bgcolor="#ffc0cb"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#dc143c"></td>
+													<td bgcolor="#dedede">Crimson</td>
+													<td bgcolor="#dedede" height="28">深红(猩红)</td>
+													<td bgcolor="#c0c0c0">#DC143C</td>
+													<td bgcolor="#c0c0c0">220,20,60</td>
+													<td bgcolor="#dc143c"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fff0f5"></td>
+													<td bgcolor="#dedede">LavenderBlush</td>
+													<td bgcolor="#dedede" height="28">淡紫红</td>
+													<td bgcolor="#c0c0c0">#FFF0F5</td>
+													<td bgcolor="#c0c0c0">255,240,245</td>
+													<td bgcolor="#fff0f5"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#db7093"></td>
+													<td bgcolor="#dedede">PaleVioletRed</td>
+													<td bgcolor="#dedede" height="28">弱紫罗兰红</td>
+													<td bgcolor="#c0c0c0">#DB7093</td>
+													<td bgcolor="#c0c0c0">219,112,147</td>
+													<td bgcolor="#db7093"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff69b4"></td>
+													<td bgcolor="#dedede">HotPink</td>
+													<td bgcolor="#dedede" height="28">热情的粉红</td>
+													<td bgcolor="#c0c0c0">#FF69B4</td>
+													<td bgcolor="#c0c0c0">255,105,180</td>
+													<td bgcolor="#ff69b4"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff1493"></td>
+													<td bgcolor="#dedede">DeepPink</td>
+													<td bgcolor="#dedede" height="28">深粉红</td>
+													<td bgcolor="#c0c0c0">#FF1493</td>
+													<td bgcolor="#c0c0c0">255,20,147</td>
+													<td bgcolor="#ff1493"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#c71585"></td>
+													<td bgcolor="#dedede">MediumVioletRed</td>
+													<td bgcolor="#dedede" height="28">中紫罗兰红</td>
+													<td bgcolor="#c0c0c0">#C71585</td>
+													<td bgcolor="#c0c0c0">199,21,133</td>
+													<td bgcolor="#c71585"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#da70d6"></td>
+													<td bgcolor="#dedede">Orchid</td>
+													<td bgcolor="#dedede" height="28">暗紫色(兰花紫)</td>
+													<td bgcolor="#c0c0c0">#DA70D6</td>
+													<td bgcolor="#c0c0c0">218,112,214</td>
+													<td bgcolor="#da70d6"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#d8bfd8"></td>
+													<td bgcolor="#dedede">Thistle</td>
+													<td bgcolor="#dedede" height="28">蓟色</td>
+													<td bgcolor="#c0c0c0">#D8BFD8</td>
+													<td bgcolor="#c0c0c0">216,191,216</td>
+													<td bgcolor="#d8bfd8"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#dda0dd"></td>
+													<td bgcolor="#dedede">Plum</td>
+													<td bgcolor="#dedede" height="28">洋李色(李子紫)</td>
+													<td bgcolor="#c0c0c0">#DDA0DD</td>
+													<td bgcolor="#c0c0c0">221,160,221</td>
+													<td bgcolor="#dda0dd"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ee82ee"></td>
+													<td bgcolor="#dedede">Violet</td>
+													<td bgcolor="#dedede" height="28">紫罗兰</td>
+													<td bgcolor="#c0c0c0">#EE82EE</td>
+													<td bgcolor="#c0c0c0">238,130,238</td>
+													<td bgcolor="#ee82ee"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff00ff"></td>
+													<td bgcolor="#dedede">Magenta</td>
+													<td bgcolor="#dedede" height="28">洋红(玫瑰红)</td>
+													<td bgcolor="#c0c0c0">#FF00FF</td>
+													<td bgcolor="#c0c0c0">255,0,255</td>
+													<td bgcolor="#ff00ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff00ff"></td>
+													<td bgcolor="#dedede">Fuchsia</td>
+													<td bgcolor="#dedede" height="28">紫红(灯笼海棠)</td>
+													<td bgcolor="#c0c0c0">#FF00FF</td>
+													<td bgcolor="#c0c0c0">255,0,255</td>
+													<td bgcolor="#ff00ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#8b008b"></td>
+													<td bgcolor="#dedede">DarkMagenta</td>
+													<td bgcolor="#dedede" height="28">深洋红</td>
+													<td bgcolor="#c0c0c0">#8B008B</td>
+													<td bgcolor="#c0c0c0">139,0,139</td>
+													<td bgcolor="#8b008b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#800080"></td>
+													<td bgcolor="#dedede">Purple</td>
+													<td bgcolor="#dedede" height="28">紫色</td>
+													<td bgcolor="#c0c0c0">#800080</td>
+													<td bgcolor="#c0c0c0">128,0,128</td>
+													<td bgcolor="#800080"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ba55d3"></td>
+													<td bgcolor="#dedede">MediumOrchid</td>
+													<td bgcolor="#dedede" height="28">中兰花紫</td>
+													<td bgcolor="#c0c0c0">#BA55D3</td>
+													<td bgcolor="#c0c0c0">186,85,211</td>
+													<td bgcolor="#ba55d3"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#9400d3"></td>
+													<td bgcolor="#dedede">DarkViolet</td>
+													<td bgcolor="#dedede" height="28">暗紫罗兰</td>
+													<td bgcolor="#c0c0c0">#9400D3</td>
+													<td bgcolor="#c0c0c0">148,0,211</td>
+													<td bgcolor="#9400d3"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#9932cc"></td>
+													<td bgcolor="#dedede">DarkOrchid</td>
+													<td bgcolor="#dedede" height="28">暗兰花紫</td>
+													<td bgcolor="#c0c0c0">#9932CC</td>
+													<td bgcolor="#c0c0c0">153,50,204</td>
+													<td bgcolor="#9932cc"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#4b0082"></td>
+													<td bgcolor="#dedede">Indigo</td>
+													<td bgcolor="#dedede" height="28">靛青/紫兰色</td>
+													<td bgcolor="#c0c0c0">#4B0082</td>
+													<td bgcolor="#c0c0c0">75,0,130</td>
+													<td bgcolor="#4b0082"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#8a2be2"></td>
+													<td bgcolor="#dedede">BlueViolet</td>
+													<td bgcolor="#dedede" height="28">蓝紫罗兰</td>
+													<td bgcolor="#c0c0c0">#8A2BE2</td>
+													<td bgcolor="#c0c0c0">138,43,226</td>
+													<td bgcolor="#8a2be2"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#9370db"></td>
+													<td bgcolor="#dedede">MediumPurple</td>
+													<td bgcolor="#dedede" height="28">中紫色</td>
+													<td bgcolor="#c0c0c0">#9370DB</td>
+													<td bgcolor="#c0c0c0">147,112,219</td>
+													<td bgcolor="#9370db"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#7b68ee"></td>
+													<td bgcolor="#dedede">MediumSlateBlue</td>
+													<td bgcolor="#dedede" height="28">中暗蓝色(中板岩蓝)</td>
+													<td bgcolor="#c0c0c0">#7B68EE</td>
+													<td bgcolor="#c0c0c0">123,104,238</td>
+													<td bgcolor="#7b68ee"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#6a5acd"></td>
+													<td bgcolor="#dedede">SlateBlue</td>
+													<td bgcolor="#dedede" height="28">石蓝色(板岩蓝)</td>
+													<td bgcolor="#c0c0c0">#6A5ACD</td>
+													<td bgcolor="#c0c0c0">106,90,205</td>
+													<td bgcolor="#6a5acd"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#483d8b"></td>
+													<td bgcolor="#dedede">DarkSlateBlue</td>
+													<td bgcolor="#dedede" height="28">暗灰蓝色(暗板岩蓝)</td>
+													<td bgcolor="#c0c0c0">#483D8B</td>
+													<td bgcolor="#c0c0c0">72,61,139</td>
+													<td bgcolor="#483d8b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#e6e6fa"></td>
+													<td bgcolor="#dedede">Lavender</td>
+													<td bgcolor="#dedede" height="28">淡紫色(熏衣草淡紫)</td>
+													<td bgcolor="#c0c0c0">#E6E6FA</td>
+													<td bgcolor="#c0c0c0">230,230,250</td>
+													<td bgcolor="#e6e6fa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f8f8ff"></td>
+													<td bgcolor="#dedede">GhostWhite</td>
+													<td bgcolor="#dedede" height="28">幽灵白</td>
+													<td bgcolor="#c0c0c0">#F8F8FF</td>
+													<td bgcolor="#c0c0c0">248,248,255</td>
+													<td bgcolor="#f8f8ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#0000ff"></td>
+													<td bgcolor="#dedede">Blue</td>
+													<td bgcolor="#dedede" height="28">纯蓝</td>
+													<td bgcolor="#c0c0c0">#0000FF</td>
+													<td bgcolor="#c0c0c0">0,0,255</td>
+													<td bgcolor="#0000ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#0000cd"></td>
+													<td bgcolor="#dedede">MediumBlue</td>
+													<td bgcolor="#dedede" height="28">中蓝色</td>
+													<td bgcolor="#c0c0c0">#0000CD</td>
+													<td bgcolor="#c0c0c0">0,0,205</td>
+													<td bgcolor="#0000cd"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#191970"></td>
+													<td bgcolor="#dedede">MidnightBlue</td>
+													<td bgcolor="#dedede" height="28">午夜蓝</td>
+													<td bgcolor="#c0c0c0">#191970</td>
+													<td bgcolor="#c0c0c0">25,25,112</td>
+													<td bgcolor="#191970"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00008b"></td>
+													<td bgcolor="#dedede">DarkBlue</td>
+													<td bgcolor="#dedede" height="28">暗蓝色</td>
+													<td bgcolor="#c0c0c0">#00008B</td>
+													<td bgcolor="#c0c0c0">0,0,139</td>
+													<td bgcolor="#00008b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#000080"></td>
+													<td bgcolor="#dedede">Navy</td>
+													<td bgcolor="#dedede" height="28">海军蓝</td>
+													<td bgcolor="#c0c0c0">#000080</td>
+													<td bgcolor="#c0c0c0">0,0,128</td>
+													<td bgcolor="#000080"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#4169e1"></td>
+													<td bgcolor="#dedede">RoyalBlue</td>
+													<td bgcolor="#dedede" height="28">皇家蓝/宝蓝</td>
+													<td bgcolor="#c0c0c0">#4169E1</td>
+													<td bgcolor="#c0c0c0">65,105,225</td>
+													<td bgcolor="#4169e1"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#6495ed"></td>
+													<td bgcolor="#dedede">CornflowerBlue</td>
+													<td bgcolor="#dedede" height="28">矢车菊蓝</td>
+													<td bgcolor="#c0c0c0">#6495ED</td>
+													<td bgcolor="#c0c0c0">100,149,237</td>
+													<td bgcolor="#6495ed"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#b0c4de"></td>
+													<td bgcolor="#dedede">LightSteelBlue</td>
+													<td bgcolor="#dedede" height="28">亮钢蓝</td>
+													<td bgcolor="#c0c0c0">#B0C4DE</td>
+													<td bgcolor="#c0c0c0">176,196,222</td>
+													<td bgcolor="#b0c4de"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#778899"></td>
+													<td bgcolor="#dedede">LightSlateGray</td>
+													<td bgcolor="#dedede" height="28">亮蓝灰(亮石板灰)</td>
+													<td bgcolor="#c0c0c0">#778899</td>
+													<td bgcolor="#c0c0c0">119,136,153</td>
+													<td bgcolor="#778899"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#708090"></td>
+													<td bgcolor="#dedede">SlateGray</td>
+													<td bgcolor="#dedede" height="28">灰石色(石板灰)</td>
+													<td bgcolor="#c0c0c0">#708090</td>
+													<td bgcolor="#c0c0c0">112,128,144</td>
+													<td bgcolor="#708090"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#1e90ff"></td>
+													<td bgcolor="#dedede">DodgerBlue</td>
+													<td bgcolor="#dedede" height="28">闪兰色(道奇蓝)</td>
+													<td bgcolor="#c0c0c0">#1E90FF</td>
+													<td bgcolor="#c0c0c0">30,144,255</td>
+													<td bgcolor="#1e90ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f0f8ff"></td>
+													<td bgcolor="#dedede">AliceBlue</td>
+													<td bgcolor="#dedede" height="28">爱丽丝蓝</td>
+													<td bgcolor="#c0c0c0">#F0F8FF</td>
+													<td bgcolor="#c0c0c0">240,248,255</td>
+													<td bgcolor="#f0f8ff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#4682b4"></td>
+													<td bgcolor="#dedede">SteelBlue</td>
+													<td bgcolor="#dedede" height="28">钢蓝/铁青</td>
+													<td bgcolor="#c0c0c0">#4682B4</td>
+													<td bgcolor="#c0c0c0">70,130,180</td>
+													<td bgcolor="#4682b4"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#87cefa"></td>
+													<td bgcolor="#dedede">LightSkyBlue</td>
+													<td bgcolor="#dedede" height="28">亮天蓝色</td>
+													<td bgcolor="#c0c0c0">#87CEFA</td>
+													<td bgcolor="#c0c0c0">135,206,250</td>
+													<td bgcolor="#87cefa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#87ceeb"></td>
+													<td bgcolor="#dedede">SkyBlue</td>
+													<td bgcolor="#dedede" height="28">天蓝色</td>
+													<td bgcolor="#c0c0c0">#87CEEB</td>
+													<td bgcolor="#c0c0c0">135,206,235</td>
+													<td bgcolor="#87ceeb"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00bfff"></td>
+													<td bgcolor="#dedede">DeepSkyBlue</td>
+													<td bgcolor="#dedede" height="28">深天蓝</td>
+													<td bgcolor="#c0c0c0">#00BFFF</td>
+													<td bgcolor="#c0c0c0">0,191,255</td>
+													<td bgcolor="#00bfff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#add8e6"></td>
+													<td bgcolor="#dedede">LightBlue</td>
+													<td bgcolor="#dedede" height="28">亮蓝</td>
+													<td bgcolor="#c0c0c0">#ADD8E6</td>
+													<td bgcolor="#c0c0c0">173,216,230</td>
+													<td bgcolor="#add8e6"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#b0e0e6"></td>
+													<td bgcolor="#dedede">PowderBlue</td>
+													<td bgcolor="#dedede" height="28">粉蓝色(火药青)</td>
+													<td bgcolor="#c0c0c0">#B0E0E6</td>
+													<td bgcolor="#c0c0c0">176,224,230</td>
+													<td bgcolor="#b0e0e6"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#5f9ea0"></td>
+													<td bgcolor="#dedede">CadetBlue</td>
+													<td bgcolor="#dedede" height="28">军兰色(军服蓝)</td>
+													<td bgcolor="#c0c0c0">#5F9EA0</td>
+													<td bgcolor="#c0c0c0">95,158,160</td>
+													<td bgcolor="#5f9ea0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f0ffff"></td>
+													<td bgcolor="#dedede">Azure</td>
+													<td bgcolor="#dedede" height="28">蔚蓝色</td>
+													<td bgcolor="#c0c0c0">#F0FFFF</td>
+													<td bgcolor="#c0c0c0">240,255,255</td>
+													<td bgcolor="#f0ffff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#e0ffff"></td>
+													<td bgcolor="#dedede">LightCyan</td>
+													<td bgcolor="#dedede" height="28">淡青色</td>
+													<td bgcolor="#c0c0c0">#E0FFFF</td>
+													<td bgcolor="#c0c0c0">224,255,255</td>
+													<td bgcolor="#e0ffff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#afeeee"></td>
+													<td bgcolor="#dedede">PaleTurquoise</td>
+													<td bgcolor="#dedede" height="28">弱绿宝石</td>
+													<td bgcolor="#c0c0c0">#AFEEEE</td>
+													<td bgcolor="#c0c0c0">175,238,238</td>
+													<td bgcolor="#afeeee"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00ffff"></td>
+													<td bgcolor="#dedede">Cyan</td>
+													<td bgcolor="#dedede" height="28">青色</td>
+													<td bgcolor="#c0c0c0">#00FFFF</td>
+													<td bgcolor="#c0c0c0">0,255,255</td>
+													<td bgcolor="#00ffff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00ffff"></td>
+													<td bgcolor="#dedede">Aqua</td>
+													<td bgcolor="#dedede" height="28">浅绿色(水色)</td>
+													<td bgcolor="#c0c0c0">#00FFFF</td>
+													<td bgcolor="#c0c0c0">0,255,255</td>
+													<td bgcolor="#00ffff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00ced1"></td>
+													<td bgcolor="#dedede">DarkTurquoise</td>
+													<td bgcolor="#dedede" height="28">暗绿宝石</td>
+													<td bgcolor="#c0c0c0">#00CED1</td>
+													<td bgcolor="#c0c0c0">0,206,209</td>
+													<td bgcolor="#00ced1"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#2f4f4f"></td>
+													<td bgcolor="#dedede">DarkSlateGray</td>
+													<td bgcolor="#dedede" height="28">暗瓦灰色(暗石板灰)</td>
+													<td bgcolor="#c0c0c0">#2F4F4F</td>
+													<td bgcolor="#c0c0c0">47,79,79</td>
+													<td bgcolor="#2f4f4f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#008b8b"></td>
+													<td bgcolor="#dedede">DarkCyan</td>
+													<td bgcolor="#dedede" height="28">暗青色</td>
+													<td bgcolor="#c0c0c0">#008B8B</td>
+													<td bgcolor="#c0c0c0">0,139,139</td>
+													<td bgcolor="#008b8b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#008080"></td>
+													<td bgcolor="#dedede">Teal</td>
+													<td bgcolor="#dedede" height="28">水鸭色</td>
+													<td bgcolor="#c0c0c0">#008080</td>
+													<td bgcolor="#c0c0c0">0,128,128</td>
+													<td bgcolor="#008080"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#48d1cc"></td>
+													<td bgcolor="#dedede">MediumTurquoise</td>
+													<td bgcolor="#dedede" height="28">中绿宝石</td>
+													<td bgcolor="#c0c0c0">#48D1CC</td>
+													<td bgcolor="#c0c0c0">72,209,204</td>
+													<td bgcolor="#48d1cc"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#20b2aa"></td>
+													<td bgcolor="#dedede">LightSeaGreen</td>
+													<td bgcolor="#dedede" height="28">浅海洋绿</td>
+													<td bgcolor="#c0c0c0">#20B2AA</td>
+													<td bgcolor="#c0c0c0">32,178,170</td>
+													<td bgcolor="#20b2aa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#40e0d0"></td>
+													<td bgcolor="#dedede">Turquoise</td>
+													<td bgcolor="#dedede" height="28">绿宝石</td>
+													<td bgcolor="#c0c0c0">#40E0D0</td>
+													<td bgcolor="#c0c0c0">64,224,208</td>
+													<td bgcolor="#40e0d0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#7fffd4"></td>
+													<td bgcolor="#dedede">Aquamarine</td>
+													<td bgcolor="#dedede" height="28">宝石碧绿</td>
+													<td bgcolor="#c0c0c0">#7FFFD4</td>
+													<td bgcolor="#c0c0c0">127,255,212</td>
+													<td bgcolor="#7fffd4"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#66cdaa"></td>
+													<td bgcolor="#dedede">MediumAquamarine</td>
+													<td bgcolor="#dedede" height="28">中宝石碧绿</td>
+													<td bgcolor="#c0c0c0">#66CDAA</td>
+													<td bgcolor="#c0c0c0">102,205,170</td>
+													<td bgcolor="#66cdaa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00fa9a"></td>
+													<td bgcolor="#dedede">MediumSpringGreen</td>
+													<td bgcolor="#dedede" height="28">中春绿色</td>
+													<td bgcolor="#c0c0c0">#00FA9A</td>
+													<td bgcolor="#c0c0c0">0,250,154</td>
+													<td bgcolor="#00fa9a"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f5fffa"></td>
+													<td bgcolor="#dedede">MintCream</td>
+													<td bgcolor="#dedede" height="28">薄荷奶油</td>
+													<td bgcolor="#c0c0c0">#F5FFFA</td>
+													<td bgcolor="#c0c0c0">245,255,250</td>
+													<td bgcolor="#f5fffa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00ff7f"></td>
+													<td bgcolor="#dedede">SpringGreen</td>
+													<td bgcolor="#dedede" height="28">春绿色</td>
+													<td bgcolor="#c0c0c0">#00FF7F</td>
+													<td bgcolor="#c0c0c0">0,255,127</td>
+													<td bgcolor="#00ff7f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#3cb371"></td>
+													<td bgcolor="#dedede">MediumSeaGreen</td>
+													<td bgcolor="#dedede" height="28">中海洋绿</td>
+													<td bgcolor="#c0c0c0">#3CB371</td>
+													<td bgcolor="#c0c0c0">60,179,113</td>
+													<td bgcolor="#3cb371"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#2e8b57"></td>
+													<td bgcolor="#dedede">SeaGreen</td>
+													<td bgcolor="#dedede" height="28">海洋绿</td>
+													<td bgcolor="#c0c0c0">#2E8B57</td>
+													<td bgcolor="#c0c0c0">46,139,87</td>
+													<td bgcolor="#2e8b57"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f0fff0"></td>
+													<td bgcolor="#dedede">Honeydew</td>
+													<td bgcolor="#dedede" height="28">蜜色(蜜瓜色)</td>
+													<td bgcolor="#c0c0c0">#F0FFF0</td>
+													<td bgcolor="#c0c0c0">240,255,240</td>
+													<td bgcolor="#f0fff0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#90ee90"></td>
+													<td bgcolor="#dedede">LightGreen</td>
+													<td bgcolor="#dedede" height="28">淡绿色</td>
+													<td bgcolor="#c0c0c0">#90EE90</td>
+													<td bgcolor="#c0c0c0">144,238,144</td>
+													<td bgcolor="#90ee90"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#98fb98"></td>
+													<td bgcolor="#dedede">PaleGreen</td>
+													<td bgcolor="#dedede" height="28">弱绿色</td>
+													<td bgcolor="#c0c0c0">#98FB98</td>
+													<td bgcolor="#c0c0c0">152,251,152</td>
+													<td bgcolor="#98fb98"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#8fbc8f"></td>
+													<td bgcolor="#dedede">DarkSeaGreen</td>
+													<td bgcolor="#dedede" height="28">暗海洋绿</td>
+													<td bgcolor="#c0c0c0">#8FBC8F</td>
+													<td bgcolor="#c0c0c0">143,188,143</td>
+													<td bgcolor="#8fbc8f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#32cd32"></td>
+													<td bgcolor="#dedede">LimeGreen</td>
+													<td bgcolor="#dedede" height="28">闪光深绿</td>
+													<td bgcolor="#c0c0c0">#32CD32</td>
+													<td bgcolor="#c0c0c0">50,205,50</td>
+													<td bgcolor="#32cd32"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#00ff00"></td>
+													<td bgcolor="#dedede">Lime</td>
+													<td bgcolor="#dedede" height="28">闪光绿</td>
+													<td bgcolor="#c0c0c0">#00FF00</td>
+													<td bgcolor="#c0c0c0">0,255,0</td>
+													<td bgcolor="#00ff00"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#228b22"></td>
+													<td bgcolor="#dedede">ForestGreen</td>
+													<td bgcolor="#dedede" height="28">森林绿</td>
+													<td bgcolor="#c0c0c0">#228B22</td>
+													<td bgcolor="#c0c0c0">34,139,34</td>
+													<td bgcolor="#228b22"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#008000"></td>
+													<td bgcolor="#dedede">Green</td>
+													<td bgcolor="#dedede" height="28">纯绿</td>
+													<td bgcolor="#c0c0c0">#008000</td>
+													<td bgcolor="#c0c0c0">0,128,0</td>
+													<td bgcolor="#008000"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#006400"></td>
+													<td bgcolor="#dedede">DarkGreen</td>
+													<td bgcolor="#dedede" height="28">暗绿色</td>
+													<td bgcolor="#c0c0c0">#006400</td>
+													<td bgcolor="#c0c0c0">0,100,0</td>
+													<td bgcolor="#006400"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#7fff00"></td>
+													<td bgcolor="#dedede">Chartreuse</td>
+													<td bgcolor="#dedede" height="28">黄绿色(查特酒绿)</td>
+													<td bgcolor="#c0c0c0">#7FFF00</td>
+													<td bgcolor="#c0c0c0">127,255,0</td>
+													<td bgcolor="#7fff00"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#7cfc00"></td>
+													<td bgcolor="#dedede">LawnGreen</td>
+													<td bgcolor="#dedede" height="28">草绿色(草坪绿_</td>
+													<td bgcolor="#c0c0c0">#7CFC00</td>
+													<td bgcolor="#c0c0c0">124,252,0</td>
+													<td bgcolor="#7cfc00"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#adff2f"></td>
+													<td bgcolor="#dedede">GreenYellow</td>
+													<td bgcolor="#dedede" height="28">绿黄色</td>
+													<td bgcolor="#c0c0c0">#ADFF2F</td>
+													<td bgcolor="#c0c0c0">173,255,47</td>
+													<td bgcolor="#adff2f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#556b2f"></td>
+													<td bgcolor="#dedede">DarkOliveGreen</td>
+													<td bgcolor="#dedede" height="28">暗橄榄绿</td>
+													<td bgcolor="#c0c0c0">#556B2F</td>
+													<td bgcolor="#c0c0c0">85,107,47</td>
+													<td bgcolor="#556b2f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#9acd32"></td>
+													<td bgcolor="#dedede">YellowGreen</td>
+													<td bgcolor="#dedede" height="28">黄绿色</td>
+													<td bgcolor="#c0c0c0">#9ACD32</td>
+													<td bgcolor="#c0c0c0">154,205,50</td>
+													<td bgcolor="#9acd32"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#6b8e23"></td>
+													<td bgcolor="#dedede">OliveDrab</td>
+													<td bgcolor="#dedede" height="28">橄榄褐色</td>
+													<td bgcolor="#c0c0c0">#6B8E23</td>
+													<td bgcolor="#c0c0c0">107,142,35</td>
+													<td bgcolor="#6b8e23"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f5f5dc"></td>
+													<td bgcolor="#dedede">Beige</td>
+													<td bgcolor="#dedede" height="28">米色/灰棕色</td>
+													<td bgcolor="#c0c0c0">#F5F5DC</td>
+													<td bgcolor="#c0c0c0">245,245,220</td>
+													<td bgcolor="#f5f5dc"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fafad2"></td>
+													<td bgcolor="#dedede">LightGoldenrodYellow</td>
+													<td bgcolor="#dedede" height="28">亮菊黄</td>
+													<td bgcolor="#c0c0c0">#FAFAD2</td>
+													<td bgcolor="#c0c0c0">250,250,210</td>
+													<td bgcolor="#fafad2"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fffff0"></td>
+													<td bgcolor="#dedede">Ivory</td>
+													<td bgcolor="#dedede" height="28">象牙色</td>
+													<td bgcolor="#c0c0c0">#FFFFF0</td>
+													<td bgcolor="#c0c0c0">255,255,240</td>
+													<td bgcolor="#fffff0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffffe0"></td>
+													<td bgcolor="#dedede">LightYellow</td>
+													<td bgcolor="#dedede" height="28">浅黄色</td>
+													<td bgcolor="#c0c0c0">#FFFFE0</td>
+													<td bgcolor="#c0c0c0">255,255,224</td>
+													<td bgcolor="#ffffe0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffff00"></td>
+													<td bgcolor="#dedede">Yellow</td>
+													<td bgcolor="#dedede" height="28">纯黄</td>
+													<td bgcolor="#c0c0c0">#FFFF00</td>
+													<td bgcolor="#c0c0c0">255,255,0</td>
+													<td bgcolor="#ffff00"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#808000"></td>
+													<td bgcolor="#dedede">Olive</td>
+													<td bgcolor="#dedede" height="28">橄榄</td>
+													<td bgcolor="#c0c0c0">#808000</td>
+													<td bgcolor="#c0c0c0">128,128,0</td>
+													<td bgcolor="#808000"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#bdb76b"></td>
+													<td bgcolor="#dedede">DarkKhaki</td>
+													<td bgcolor="#dedede" height="28">暗黄褐色(深卡叽布)</td>
+													<td bgcolor="#c0c0c0">#BDB76B</td>
+													<td bgcolor="#c0c0c0">189,183,107</td>
+													<td bgcolor="#bdb76b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fffacd"></td>
+													<td bgcolor="#dedede">LemonChiffon</td>
+													<td bgcolor="#dedede" height="28">柠檬绸</td>
+													<td bgcolor="#c0c0c0">#FFFACD</td>
+													<td bgcolor="#c0c0c0">255,250,205</td>
+													<td bgcolor="#fffacd"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#eee8aa"></td>
+													<td bgcolor="#dedede">PaleGoldenrod</td>
+													<td bgcolor="#dedede" height="28">灰菊黄(苍麒麟色)</td>
+													<td bgcolor="#c0c0c0">#EEE8AA</td>
+													<td bgcolor="#c0c0c0">238,232,170</td>
+													<td bgcolor="#eee8aa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f0e68c"></td>
+													<td bgcolor="#dedede">Khaki</td>
+													<td bgcolor="#dedede" height="28">黄褐色(卡叽布)</td>
+													<td bgcolor="#c0c0c0">#F0E68C</td>
+													<td bgcolor="#c0c0c0">240,230,140</td>
+													<td bgcolor="#f0e68c"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffd700"></td>
+													<td bgcolor="#dedede">Gold</td>
+													<td bgcolor="#dedede" height="28">金色</td>
+													<td bgcolor="#c0c0c0">#FFD700</td>
+													<td bgcolor="#c0c0c0">255,215,0</td>
+													<td bgcolor="#ffd700"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fff8dc"></td>
+													<td bgcolor="#dedede">Cornsilk</td>
+													<td bgcolor="#dedede" height="28">玉米丝色</td>
+													<td bgcolor="#c0c0c0">#FFF8DC</td>
+													<td bgcolor="#c0c0c0">255,248,220</td>
+													<td bgcolor="#fff8dc"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#daa520"></td>
+													<td bgcolor="#dedede">Goldenrod</td>
+													<td bgcolor="#dedede" height="28">金菊黄</td>
+													<td bgcolor="#c0c0c0">#DAA520</td>
+													<td bgcolor="#c0c0c0">218,165,32</td>
+													<td bgcolor="#daa520"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#b8860b"></td>
+													<td bgcolor="#dedede">DarkGoldenrod</td>
+													<td bgcolor="#dedede" height="28">暗金菊黄</td>
+													<td bgcolor="#c0c0c0">#B8860B</td>
+													<td bgcolor="#c0c0c0">184,134,11</td>
+													<td bgcolor="#b8860b"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fffaf0"></td>
+													<td bgcolor="#dedede">FloralWhite</td>
+													<td bgcolor="#dedede" height="28">花的白色</td>
+													<td bgcolor="#c0c0c0">#FFFAF0</td>
+													<td bgcolor="#c0c0c0">255,250,240</td>
+													<td bgcolor="#fffaf0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fdf5e6"></td>
+													<td bgcolor="#dedede">OldLace</td>
+													<td bgcolor="#dedede" height="28">老花色(旧蕾丝)</td>
+													<td bgcolor="#c0c0c0">#FDF5E6</td>
+													<td bgcolor="#c0c0c0">253,245,230</td>
+													<td bgcolor="#fdf5e6"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f5deb3"></td>
+													<td bgcolor="#dedede">Wheat</td>
+													<td bgcolor="#dedede" height="28">浅黄色(小麦色)</td>
+													<td bgcolor="#c0c0c0">#F5DEB3</td>
+													<td bgcolor="#c0c0c0">245,222,179</td>
+													<td bgcolor="#f5deb3"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffe4b5"></td>
+													<td bgcolor="#dedede">Moccasin</td>
+													<td bgcolor="#dedede" height="28">鹿皮色(鹿皮靴)</td>
+													<td bgcolor="#c0c0c0">#FFE4B5</td>
+													<td bgcolor="#c0c0c0">255,228,181</td>
+													<td bgcolor="#ffe4b5"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffa500"></td>
+													<td bgcolor="#dedede">Orange</td>
+													<td bgcolor="#dedede" height="28">橙色</td>
+													<td bgcolor="#c0c0c0">#FFA500</td>
+													<td bgcolor="#c0c0c0">255,165,0</td>
+													<td bgcolor="#ffa500"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffefd5"></td>
+													<td bgcolor="#dedede">PapayaWhip</td>
+													<td bgcolor="#dedede" height="28">番木色(番木瓜)</td>
+													<td bgcolor="#c0c0c0">#FFEFD5</td>
+													<td bgcolor="#c0c0c0">255,239,213</td>
+													<td bgcolor="#ffefd5"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffebcd"></td>
+													<td bgcolor="#dedede">BlanchedAlmond</td>
+													<td bgcolor="#dedede" height="28">白杏色</td>
+													<td bgcolor="#c0c0c0">#FFEBCD</td>
+													<td bgcolor="#c0c0c0">255,235,205</td>
+													<td bgcolor="#ffebcd"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffdead"></td>
+													<td bgcolor="#dedede">NavajoWhite</td>
+													<td bgcolor="#dedede" height="28">纳瓦白(土著白)</td>
+													<td bgcolor="#c0c0c0">#FFDEAD</td>
+													<td bgcolor="#c0c0c0">255,222,173</td>
+													<td bgcolor="#ffdead"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#faebd7"></td>
+													<td bgcolor="#dedede">AntiqueWhite</td>
+													<td bgcolor="#dedede" height="28">古董白</td>
+													<td bgcolor="#c0c0c0">#FAEBD7</td>
+													<td bgcolor="#c0c0c0">250,235,215</td>
+													<td bgcolor="#faebd7"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#d2b48c"></td>
+													<td bgcolor="#dedede">Tan</td>
+													<td bgcolor="#dedede" height="28">茶色</td>
+													<td bgcolor="#c0c0c0">#D2B48C</td>
+													<td bgcolor="#c0c0c0">210,180,140</td>
+													<td bgcolor="#d2b48c"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#deb887"></td>
+													<td bgcolor="#dedede">BurlyWood</td>
+													<td bgcolor="#dedede" height="28">硬木色</td>
+													<td bgcolor="#c0c0c0">#DEB887</td>
+													<td bgcolor="#c0c0c0">222,184,135</td>
+													<td bgcolor="#deb887"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffe4c4"></td>
+													<td bgcolor="#dedede">Bisque</td>
+													<td bgcolor="#dedede" height="28">陶坯黄</td>
+													<td bgcolor="#c0c0c0">#FFE4C4</td>
+													<td bgcolor="#c0c0c0">255,228,196</td>
+													<td bgcolor="#ffe4c4"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff8c00"></td>
+													<td bgcolor="#dedede">DarkOrange</td>
+													<td bgcolor="#dedede" height="28">深橙色</td>
+													<td bgcolor="#c0c0c0">#FF8C00</td>
+													<td bgcolor="#c0c0c0">255,140,0</td>
+													<td bgcolor="#ff8c00"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#faf0e6"></td>
+													<td bgcolor="#dedede">Linen</td>
+													<td bgcolor="#dedede" height="28">亚麻布</td>
+													<td bgcolor="#c0c0c0">#FAF0E6</td>
+													<td bgcolor="#c0c0c0">250,240,230</td>
+													<td bgcolor="#faf0e6"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#cd853f"></td>
+													<td bgcolor="#dedede">Peru</td>
+													<td bgcolor="#dedede" height="28">秘鲁色</td>
+													<td bgcolor="#c0c0c0">#CD853F</td>
+													<td bgcolor="#c0c0c0">205,133,63</td>
+													<td bgcolor="#cd853f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffdab9"></td>
+													<td bgcolor="#dedede">PeachPuff</td>
+													<td bgcolor="#dedede" height="28">桃肉色</td>
+													<td bgcolor="#c0c0c0">#FFDAB9</td>
+													<td bgcolor="#c0c0c0">255,218,185</td>
+													<td bgcolor="#ffdab9"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f4a460"></td>
+													<td bgcolor="#dedede">SandyBrown</td>
+													<td bgcolor="#dedede" height="28">沙棕色</td>
+													<td bgcolor="#c0c0c0">#F4A460</td>
+													<td bgcolor="#c0c0c0">244,164,96</td>
+													<td bgcolor="#f4a460"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#d2691e"></td>
+													<td bgcolor="#dedede">Chocolate</td>
+													<td bgcolor="#dedede" height="28">巧克力色</td>
+													<td bgcolor="#c0c0c0">#D2691E</td>
+													<td bgcolor="#c0c0c0">210,105,30</td>
+													<td bgcolor="#d2691e"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#8b4513"></td>
+													<td bgcolor="#dedede">SaddleBrown</td>
+													<td bgcolor="#dedede" height="28">重褐色(马鞍棕色)</td>
+													<td bgcolor="#c0c0c0">#8B4513</td>
+													<td bgcolor="#c0c0c0">139,69,19</td>
+													<td bgcolor="#8b4513"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fff5ee"></td>
+													<td bgcolor="#dedede">Seashell</td>
+													<td bgcolor="#dedede" height="28">海贝壳</td>
+													<td bgcolor="#c0c0c0">#FFF5EE</td>
+													<td bgcolor="#c0c0c0">255,245,238</td>
+													<td bgcolor="#fff5ee"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#a0522d"></td>
+													<td bgcolor="#dedede">Sienna</td>
+													<td bgcolor="#dedede" height="28">黄土赭色</td>
+													<td bgcolor="#c0c0c0">#A0522D</td>
+													<td bgcolor="#c0c0c0">160,82,45</td>
+													<td bgcolor="#a0522d"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffa07a"></td>
+													<td bgcolor="#dedede">LightSalmon</td>
+													<td bgcolor="#dedede" height="28">浅鲑鱼肉色</td>
+													<td bgcolor="#c0c0c0">#FFA07A</td>
+													<td bgcolor="#c0c0c0">255,160,122</td>
+													<td bgcolor="#ffa07a"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff7f50"></td>
+													<td bgcolor="#dedede">Coral</td>
+													<td bgcolor="#dedede" height="28">珊瑚</td>
+													<td bgcolor="#c0c0c0">#FF7F50</td>
+													<td bgcolor="#c0c0c0">255,127,80</td>
+													<td bgcolor="#ff7f50"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff4500"></td>
+													<td bgcolor="#dedede">OrangeRed</td>
+													<td bgcolor="#dedede" height="28">橙红色</td>
+													<td bgcolor="#c0c0c0">#FF4500</td>
+													<td bgcolor="#c0c0c0">255,69,0</td>
+													<td bgcolor="#ff4500"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#e9967a"></td>
+													<td bgcolor="#dedede">DarkSalmon</td>
+													<td bgcolor="#dedede" height="28">深鲜肉/鲑鱼色</td>
+													<td bgcolor="#c0c0c0">#E9967A</td>
+													<td bgcolor="#c0c0c0">233,150,122</td>
+													<td bgcolor="#e9967a"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff6347"></td>
+													<td bgcolor="#dedede">Tomato</td>
+													<td bgcolor="#dedede" height="28">番茄红</td>
+													<td bgcolor="#c0c0c0">#FF6347</td>
+													<td bgcolor="#c0c0c0">255,99,71</td>
+													<td bgcolor="#ff6347"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffe4e1"></td>
+													<td bgcolor="#dedede">MistyRose</td>
+													<td bgcolor="#dedede" height="28">浅玫瑰色(薄雾玫瑰)</td>
+													<td bgcolor="#c0c0c0">#FFE4E1</td>
+													<td bgcolor="#c0c0c0">255,228,225</td>
+													<td bgcolor="#ffe4e1"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fa8072"></td>
+													<td bgcolor="#dedede">Salmon</td>
+													<td bgcolor="#dedede" height="28">鲜肉/鲑鱼色</td>
+													<td bgcolor="#c0c0c0">#FA8072</td>
+													<td bgcolor="#c0c0c0">250,128,114</td>
+													<td bgcolor="#fa8072"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#fffafa"></td>
+													<td bgcolor="#dedede">Snow</td>
+													<td bgcolor="#dedede" height="28">雪白色</td>
+													<td bgcolor="#c0c0c0">#FFFAFA</td>
+													<td bgcolor="#c0c0c0">255,250,250</td>
+													<td bgcolor="#fffafa"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f08080"></td>
+													<td bgcolor="#dedede">LightCoral</td>
+													<td bgcolor="#dedede" height="28">淡珊瑚色</td>
+													<td bgcolor="#c0c0c0">#F08080</td>
+													<td bgcolor="#c0c0c0">240,128,128</td>
+													<td bgcolor="#f08080"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#bc8f8f"></td>
+													<td bgcolor="#dedede">RosyBrown</td>
+													<td bgcolor="#dedede" height="28">玫瑰棕色</td>
+													<td bgcolor="#c0c0c0">#BC8F8F</td>
+													<td bgcolor="#c0c0c0">188,143,143</td>
+													<td bgcolor="#bc8f8f"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#cd5c5c"></td>
+													<td bgcolor="#dedede">IndianRed</td>
+													<td bgcolor="#dedede" height="28">印度红</td>
+													<td bgcolor="#c0c0c0">#CD5C5C</td>
+													<td bgcolor="#c0c0c0">205,92,92</td>
+													<td bgcolor="#cd5c5c"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ff0000"></td>
+													<td bgcolor="#dedede">Red</td>
+													<td bgcolor="#dedede" height="28">纯红</td>
+													<td bgcolor="#c0c0c0">#FF0000</td>
+													<td bgcolor="#c0c0c0">255,0,0</td>
+													<td bgcolor="#ff0000"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#a52a2a"></td>
+													<td bgcolor="#dedede">Brown</td>
+													<td bgcolor="#dedede" height="28">棕色</td>
+													<td bgcolor="#c0c0c0">#A52A2A</td>
+													<td bgcolor="#c0c0c0">165,42,42</td>
+													<td bgcolor="#a52a2a"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#b22222"></td>
+													<td bgcolor="#dedede">FireBrick</td>
+													<td bgcolor="#dedede" height="28">火砖色(耐火砖)</td>
+													<td bgcolor="#c0c0c0">#B22222</td>
+													<td bgcolor="#c0c0c0">178,34,34</td>
+													<td bgcolor="#b22222"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#8b0000"></td>
+													<td bgcolor="#dedede">DarkRed</td>
+													<td bgcolor="#dedede" height="28">深红色</td>
+													<td bgcolor="#c0c0c0">#8B0000</td>
+													<td bgcolor="#c0c0c0">139,0,0</td>
+													<td bgcolor="#8b0000"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#800000"></td>
+													<td bgcolor="#dedede">Maroon</td>
+													<td bgcolor="#dedede" height="28">栗色</td>
+													<td bgcolor="#c0c0c0">#800000</td>
+													<td bgcolor="#c0c0c0">128,0,0</td>
+													<td bgcolor="#800000"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#ffffff"></td>
+													<td bgcolor="#dedede">White</td>
+													<td bgcolor="#dedede" height="28">纯白</td>
+													<td bgcolor="#c0c0c0">#FFFFFF</td>
+													<td bgcolor="#c0c0c0">255,255,255</td>
+													<td bgcolor="#ffffff"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#f5f5f5"></td>
+													<td bgcolor="#dedede">WhiteSmoke</td>
+													<td bgcolor="#dedede" height="28">白烟</td>
+													<td bgcolor="#c0c0c0">#F5F5F5</td>
+													<td bgcolor="#c0c0c0">245,245,245</td>
+													<td bgcolor="#f5f5f5"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#dcdcdc"></td>
+													<td bgcolor="#dedede">Gainsboro</td>
+													<td bgcolor="#dedede" height="28">淡灰色(庚斯博罗灰)</td>
+													<td bgcolor="#c0c0c0">#DCDCDC</td>
+													<td bgcolor="#c0c0c0">220,220,220</td>
+													<td bgcolor="#dcdcdc"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#d3d3d3"></td>
+													<td bgcolor="#dedede">LightGrey</td>
+													<td bgcolor="#dedede" height="28">浅灰色</td>
+													<td bgcolor="#c0c0c0">#D3D3D3</td>
+													<td bgcolor="#c0c0c0">211,211,211</td>
+													<td bgcolor="#d3d3d3"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#c0c0c0"></td>
+													<td bgcolor="#dedede">Silver</td>
+													<td bgcolor="#dedede" height="28">银灰色</td>
+													<td bgcolor="#c0c0c0">#C0C0C0</td>
+													<td bgcolor="#c0c0c0">192,192,192</td>
+													<td bgcolor="#c0c0c0"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#a9a9a9"></td>
+													<td bgcolor="#dedede">DarkGray</td>
+													<td bgcolor="#dedede" height="28">深灰色</td>
+													<td bgcolor="#c0c0c0">#A9A9A9</td>
+													<td bgcolor="#c0c0c0">169,169,169</td>
+													<td bgcolor="#a9a9a9"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#808080"></td>
+													<td bgcolor="#dedede">Gray</td>
+													<td bgcolor="#dedede" height="28">灰色</td>
+													<td bgcolor="#c0c0c0">#808080</td>
+													<td bgcolor="#c0c0c0">128,128,128</td>
+													<td bgcolor="#808080"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#696969"></td>
+													<td bgcolor="#dedede">DimGray</td>
+													<td bgcolor="#dedede" height="28">暗淡的灰色</td>
+													<td bgcolor="#c0c0c0">#696969</td>
+													<td bgcolor="#c0c0c0">105,105,105</td>
+													<td bgcolor="#696969"></td>
+												</tr>
+												<tr>
+													<td bgcolor="#000000"></td>
+													<td bgcolor="#dedede">Black</td>
+													<td bgcolor="#dedede" height="28">纯黑</td>
+													<td bgcolor="#c0c0c0">#000000</td>
+													<td bgcolor="#c0c0c0">0,0,0</td>
+													<td bgcolor="#000000"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="post-tool-plane">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
