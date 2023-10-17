@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="mui.min11.css">
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="mui.min.js"></script>
+    <script src="util.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>大微 TF</title>
+    <!--使用QQ或者微信打开分割线-->
+    <style>
+        #guide {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
+        #guide img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+               <script>
+function refresh(){
+url = location.href;
+console.log(url);
+var once = url.split("#");
+if (once[1] != 1) {
+url += "#1";
+self.location.replace(url);
+window.location.reload();
+}
+}
+setTimeout('refresh()', 1000);
+</script> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 16px !important;
+        }
+        #app {
+            background: #fff !important;
+        }
+        #app > * {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        #app .card{
+            background: rgb(255,171,13);
+            border-radius: .3125rem;
+            padding: .625rem .9375rem;
+            /*margin-top: .625rem;*/
+            color: rgb(0,0,8);
+            font-weight: 600;
+            font-size: 1rem;
+            margin: .5rem 1rem;
+        }
+        #app .card * {
+            margin: 0;
+            padding: 0;
+        }
+        #app .card dl {
+            margin: 0 .625rem .625rem .625rem;
+        }
+        #app .card dt {
+            margin: .625rem 0 .3rem 0;
+            font-size: 1.25rem;
+        }
+        #app .card dl>dt:nth-child(n+2){
+            margin-top: 1.25rem;
+        }
+        #app .card dd {
+            font-size: .875rem;
+            line-height: 1.5rem;
+            font-weight: normal;
+        }
+        #app .n-install * {
+            margin: 0;
+            padding: 0;
+        }
+        #app .n-install .title {
+            color: rgb(0,0,8);
+            font-size: .875rem;
+            padding: .625rem;
+            margin-left: 1.12rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        #app .n-install>div:nth-child(2){
+            margin-top: 0;
+        }
+        #app .n-install .sp{
+            height: .125rem;
+            margin-top: .25rem;
+            width: 75%;
+            background: rgb(255,171,13);
+        }
+        #app .n-install .step{
+            margin: 1rem 1.25rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #app .n-install .step .i {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        #app .n-install .step .i img {
+            width: 4.2rem;
+            height: 4.2rem;
+            object-fit: cover;
+            margin-right: .625rem;
+        }
+        #app .n-install .step .d {
+            color: rgb(15,5,8);
+            background: rgb(255,171,13);
+            border-radius: .3125rem;
+            padding: .625rem;
+            font-size: .875rem;
+            font-weight: 500;
+        }
+        .tips {
+            font-size: .75rem;
+            color: rgb(217,54,49);
+        }
+        .f14 {
+            font-size: 1.0625rem;
+            margin: .3125rem 0;
+            color: #000;
+        }
+        .f12{
+            font-size: .75rem;
+            color: rgb(130,130,130);
+        }
+        .bt-line {
+            padding-bottom: 1rem !important;
+            border-bottom: solid .0625rem rgb(220,220,220);
+        }
+        #app .active-code{
+            margin: 1.5rem 1.25rem;
+            color: #000;
+            border-radius: .3125rem;
+            background: rgb(255,171,13);
+            text-align: center;
+            padding: .8rem;
+            font-size: .875rem;
+        }
+    </style>
+
+    <!--使用QQ或者微信打开分割线-->
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent;
+            if (userAgent.indexOf("MicroMessenger") !== -1 || userAgent.indexOf("QQ/") !== -1) {
+                alert("如果你看到此提示，就表示你不是使用的苹果Safari浏览器，请使用Safari打开,否则无法安装");
+            }
+        };
+    </script>
+    <link href="sweetalert2.min.css" type="text/css" rel="stylesheet" />
+    <style>
+        #app{
+            max-width: 600px;
+            margin:  0 auto;
+        }
+        .img-view{
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .des{
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin-top: 5px;
+        }
+        .des ul{
+            color:#f9f6f6;font-weight: bold;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+        }
+        .install{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .button{
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            width: 99%;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #f9f6f6 !important;
+        }
+        li,ul {
+            list-style-type:none;
+        }
+        .des li:before {
+            content: "🔸";
+            margin-right:10px;
+        }
+        .red{
+            color:#ff0052;
+        }
+    </style>
+    <script>
+        let headerImg = "assets/0.jpg" // 顶部图片
+        let bottomImg = "assets/00.jpg" // 底部图片
+        let bottomImg1 = "https://materialssl.edujia.com/material/article/atfw6/1_1696084440937.jpg" // 底部图片
+        let backgroundColor = "#08268f"// 前3个底色
+        let apiUrl = "https://api.udid1.xyz/api/down/redeem/dw" // 个人公司开发者账号出售、海外服务器、TF包贴牌、TF上架接单Telegram飞机：@RRT521
+        let apiUrl2 = "https://api.udid1.xyz/api/down/redeem/dw/v2" // 二开地址api地址 个人公司开发者账号出售、海外服务器、TF包贴牌、TF上架接单Telegram飞机：@RRT521
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    var btnArray = ['OK'];
+    mui.confirm("<br>"+'欢迎使用，90天链接充沛！'+"<br><br>", "<br>"+'🍎大微 TF', btnArray, function(e) {
+    })
+    function inputCode_b(url) {
+
+        var btnArray = ['取消', '确认'];
+        mui.prompt(' ', '', '请输入激活码跳转下载', btnArray, function(e) {
+            if (e.index == 1) {
+                if (e.value == '') {
+                    util.toast('请输入激活码', '', 'error');
+                    return false;
+                }
+                app.$data.loading = true
+                var ver = "/v1"
+                var api = ""
+                if(url.indexOf("/v2")!==-1){
+                    ver = "/v2"
+                    api = url.replace("/v2","")
+                }else{
+                    api = url
+                }
+                console.log(api,url)
+                fetch(api+"/code/"+e.value+ver,{method: 'get' ,headers: {'Content-Type': 'application/json'}}).then(async response => {
+                    try{
+
+                        let data = await response.json()
+                        if (data.code!==1) {
+                            mui.alert(data.msg, '提示', function() {});
+
+                        }else{
+                            location.href = 'itms-beta://testflight.apple.com/v1/invite/'+ data.data.url;
+                        }
+
+                    }catch(e){
+                        mui.alert(data.data.msg, '提示', function() {})
+                        //Swal.showValidationMessage(e)
+                        return false
+                    }
+                }).catch(error => { mui.alert('网络链接失败，请刷新页面', '提示', function() {}); }).finally(()=>app.$data.loading = false)
+            } else {
+
+            }
+        })
+    }
+</script>
+<div id="app">
+    <style type="text/css" media="all">
+        .content-bg{
+        background-color: {{bg}};
+        }
+    </style>
+    <n-config-provider :theme-overrides="{common:{primaryColor:bg}}">
+        <n-spin :show="loading">
+            <img class="img-view header-img" :src="headerImg" alt="" srcset="">
+            <n-alert title="" v-show="loading" type="success">
+                正在TF获取链接...
+            </n-alert>
+            <div class="des" style="background-color: rgb(0 40 163);display: none">
+                <ul>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <dl>
+                    <dt>欢迎使用 TF大微 </dt>
+                    <dd></dd>24小时不间断提供下载链接</dd>
+                    <dd>皮卡丘包+二宝（2选一)</dd>
+
+                    <dd>一码一开，需要更多开请使用多个激活码再下载</dd>
+                    
+                    <dd>TF高端产品稳定好用</dd>
+                    <dd>超级放封 畅爽使用 不卡设备</dd>
+                </dl>
+            </div>
+            <div class="n-install">
+                <div style="display:flex;flex-flow:row;position:relative;margin-bottom:.5rem">
+                    <div class="title">
+                        <div style="font-weight: 500">安装大微</div>
+                        <div class="sp"></div>
+                    </div>
+                </div>
+                <div class="step bt-line">
+                    <div class="i">
+                        <img src="https://materialssl.edujia.com/material/article/atfw6/1_1696083153749.jpg" alt="">
+                        <div>
+                            <p class="tips">步骤一</p>
+                            <p class="f14">安装TestFlight</p>
+                            <p class="f12">必须安装</p>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="d" @click="installTf">安装</div>
+                    </div>
+              
+                </div>
+                <div class="step bt-line">
+                    <div class="i">
+                        <img src="https://materialssl.edujia.com/material/article/atfw6/2_1696083154213.jpg" alt="">
+                        <div>
+                            <p class="tips">步骤二  2选1安装 </p>
+                            <p class="f14">应用1（皮卡丘）</p>
+                            <p class="f12">输入授权码后等待跳转点接收安装</p>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="d" @click="inputCode(to2)">安装</div>
+                      <!--<div class="active-code" onclick="location.href='//down.udid1.xyz/#/redeem/gy22'">安装</div>-->
+                    </div>
+                      </div>
+                <div class="step" style="margin-bottom:2rem">
+                    <div class="i">
+                        <img src="https://materialssl.edujia.com/material/article/atfw6/2_1696083154213.jpg" alt="">
+                        <div>
+                            <p class="tips">步骤二  2选1安装</p>
+                            <p class="f14">应用2（皮卡丘）</p>
+                            <p class="f12">输入授权码后等待跳转点接收安装</p>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="d" @click="inputCode(to1)">安装</div>
+
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="i">
+                        <img src="https://materialssl.edujia.com/material/article/atfw6/3_1696083154387.jpg" alt="">
+                        <div>
+                            <p class="tips">观看教程</p>
+                            <p class="f14">视频教程</p>
+                            <p class="f12">下载教程与使用视频</p>
+                        </div>
+                    </div>
+                    <di>
+                       <div class="d" >观看</div>
+                    </di>
+                </div>                              
+            </div>
+            <div class="active-code" onclick="location.href='http://down.udid1.xyz/#/redeem/dw'">内部兑换下载</div>
+            <div class="active-code" onclick="location.href='http://121.204.253.87:9001/front'">激活码查询</div>
+            <div class="install" style="display: none">
+            
+               </button>
+            </div>
+                                                       
+        </n-spin>
+        
+    </n-config-provider>
+    <img class="img-view header-img" :src="bottomImg" alt="" srcset="">
+    <img class="img-view header-img" :src="bottomImg1" alt="" srcset="">
+    <script src="vue.global.min.js" type="application/javascript"></script>
+    <script src="index11.js"></script>
+    <script>
+        const { createApp } = Vue
+        const app = createApp({
+            data() {
+                return {
+                    appName:"星河",
+                    headerImg:headerImg,
+                    bottomImg:bottomImg,
+                    bottomImg1:bottomImg1,
+                    bg:backgroundColor,
+                    to1:apiUrl||window.location.pathname,
+                    to2:apiUrl2,
+                    loading:false
+                }
+            },
+            methods:{
+                installTf(){
+                    window.open("https://apps.apple.com/cn/app/testflight/id899247664")
+                },
+                inputCode(url){
+                    inputCode_b(url);
+                }
+            }
+        }).use(naive).mount('#app')
+    </script>
+    <div id="guide">
+        <img src="guide3.jpg" alt="引导图片">
+    </div>
+    <script src="guide.js"></script>
+</div>
+</body>
+</html>
