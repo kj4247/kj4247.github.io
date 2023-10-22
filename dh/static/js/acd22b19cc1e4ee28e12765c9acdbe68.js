@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="虽然想做一团火，却成了一块透视苦难的冰";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()
