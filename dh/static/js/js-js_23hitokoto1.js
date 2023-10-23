@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="物质决定意识，意识反作用于物质";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()
