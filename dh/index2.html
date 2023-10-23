@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <!DOCTYPE html>
+<html lang="en" translate="no">
+<link rel="apple-touch-icon-precomposed" href="https://logo.qlam.cc/img/quan.png">
+  <head>
+    <meta name="baidu-site-verification" content="codeva-YsuPgmLzz0">
+<!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
+<!--播放器头部-->
+<script src="static/js/polyfill.min.js"></script>  
+<style>
+.container {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.09);
+    border-radius: 0.75rem;
+}
+.container nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 40px;
+    color: #777;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+.container nav ul li::after {
+    content: '';
+    border-bottom: 1px solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+.container nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+}
+</style>
+<style>
+/* 去除通知栏 右上角 X */
+.notify-render .hope-close-button{
+	display: none;
+}
+       
+/*白天背景图*/
+.hope-ui-light {
+    background-image: url("static/image/bj.gif") !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+}
+/*夜间背景图*/
+.hope-ui-dark {
+    background-image: url("static/image/bj.gif") !important;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position-x:center;
+}
+
+/*主列表白天模式透明*/
+.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+}
+/*主列表夜间模式透明*/
+ .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+
+/*readme白天模式透明*/
+.hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+}
+/*readme夜间模式透明*/
+.hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+
+/*顶部右上角切换按钮透明*/
+.hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgba(255, 255, 255, 0.3)!important;
+}
+.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color:rgb(0 0 0 / 10%)!important;
+	
+}
+
+.hope-c-PJLV-iktMgsV-css {
+    height: 70px;
+    width: auto;
+}
+/*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
+.hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+}
+.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+
+/*白天模式代码块透明*/
+.hope-ui-light pre {
+    background-color: rgba(255, 255, 255, 0.1)!important;
+}
+/*夜间模式代码块透明*/
+.hope-ui-dark pre {
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+/*底部CSS，.App .table这三个一起的*/
+ dibu {
+    border-top: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.App {
+    min-height: 85vh;
+}
+.table {
+    margin: auto;
+}
+
+
+/*去掉底部*/
+.footer {
+    display: none !important;
+}
+
+
+/*全局字体*/
+*{font-family:LXGW WenKai}
+*{font-weight:bold}
+body {font-family: LXGW WenKai;}
+
+
+<!--</*渐变背景CSS*/
+#canvas-basic {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -999;
+}-->
+
+</style>
+  <style>
+  .wl-panel {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+  }
+</style>
+<script src="static/js/jquery.min-4.0510.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta name="generator" content="AList V3">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="AList">
+    <link rel="apple-touch-icon" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png">
+    <script src="static/js/aliyun-web-office-sdk.min.js" async=""></script>
+    <link rel="shortcut icon" type="image/ico" href="https://img.io31.top/0o8_cn/images/2023/10/20/16977841126532213004c1b.png">
+    <title>一品资源库丨为白嫖而生</title>
+    <script>
+      window.ALIST = {
+        cdn: '',
+        monaco_cdn: undefined,
+        base_path: '/',
+        api: undefined,
+        main_color: '#1890ff',
+      }
+      window.__dynamic_base__ = window.ALIST.cdn || ""
+    </script>
+    
+    
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+    <script>
+(function(){
+var preloads = [{"parentTagName":"head","tagName":"link","attrs":{"href":"/static/manifest.json","rel":"manifest"}},{"parentTagName":"head","tagName":"script","attrs":{"type":"module","crossorigin":"","src":"/assets/index.af742395.js"}},{"parentTagName":"head","tagName":"link","attrs":{"rel":"stylesheet","href":"/assets/index.d81a3e4b.css"}}];
+function setAttribute(target, attrs) {
+for (var key in attrs) {
+  target.setAttribute(key, attrs[key]);
+}
+return target;
+};
+for(var i = 0; i < preloads.length; i++){
+var item = preloads[i]
+var childNode = document.createElement(item.tagName);
+setAttribute(childNode, item.attrs)
+if( window.__dynamic_base__) {
+  if(item.tagName == 'link') {
+    setAttribute(childNode, { href:  window.__dynamic_base__ + item.attrs.href })
+  } else if (item.tagName == 'script') {
+    setAttribute(childNode, { src:  window.__dynamic_base__ + item.attrs.src })
+  }
+}
+document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
+}
+})();
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    
+    <script>
+  // 背景切换
+  function display() {
+    var target = document.querySelector(".chakra-ui-light")
+    if (target.style.background == "none") {
+      target.style.background = ""
+    } else {
+      target.style.background = "none"
+    }
+  }
+
+  // 屏蔽右键
+
+  window.onload = function () {
+    document.onkeydown = function () {
+      var e = window.event || arguments[0]
+      //F12
+      if (e.keyCode == 123) {
+        return false
+        //Ctrl+Shift+I
+      } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+        return false
+        //Shift+F10
+      } else if ((e.shiftKey) && (e.keyCode == 121)) {
+        return false
+        //Ctrl+U
+      } else if ((e.ctrlKey) && (e.keyCode == 85)) {
+        return false
+      }
+    }
+    document.oncontextmenu = function () {
+      return false
+    }
+  }
+
+  // 延迟加载
+  $(function () {
+    $("#shift").css("display", "")
+    $("#footer").css("display", "")
+    let alterDelay = setInterval(() => {
+      if ($("a.css-1f9ofrh")[0]) {
+        $("a.css-1f9ofrh").text("🔞")
+        clearInterval(alterDelay)
+      }
+    }, 0)
+  })
+</script>
+
+<!--延迟加载-->
+
+<!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
+<div id="customize" style="display: none;">
+<div>
+     
+  </div>
+</div>
+<!--延迟加载配套使用JS-->
+<script>
+  let interval = setInterval(() => {
+    if (document.querySelector(".footer")) {
+      document.querySelector("#customize").style.display = "";
+      clearInterval(interval);
+    }
+  }, 200);
+</script>
+
+<style>
+    /* 隐藏底部信息 */
+    .footer {
+        display: none !important;
+    }
+</style>
+<br>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span>一品资源库通知</span><br>
+    <a href="https://qm.qq.com/q/YQSmzOZAQ0">
+      <img src="static/picture/1697783959653220979dec2.jpg" style="width: 100%; height: auto;border-radius: 10px;">
+    </a><br>
+    <p style="text-align: center">点击二维码添加QQ群回复密码即可</p>
+    <p style="text-align: center">QQ群号：511282889</p>
+    <button id="closePopup" style="margin: 20px 0 0 0" disabled="">关闭</button>
+  </div>
+</div>
+
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%; /* 自适应宽度 */
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* 最大宽度，适用于PC */
+  }
+
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  #closePopup {
+    cursor: not-allowed;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+  #closePopup:hover {
+    background: #007bff;
+  }
+
+  #closePopup.enabled {
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "flex";
+    const closePopupButton = document.getElementById("closePopup");
+    let countdown = 4;
+
+    const countdownInterval = setInterval(function() {
+      countdown--;
+      closePopupButton.textContent = "关闭 (" + countdown + ")";
+      if (countdown === 0) {
+        clearInterval(countdownInterval);
+        closePopupButton.classList.add("enabled");
+        closePopupButton.removeAttribute("disabled");
+        closePopupButton.textContent = "关闭";
+      }
+    }, 1000);
+
+    closePopupButton.addEventListener("click", function() {
+      if (closePopupButton.classList.contains("enabled")) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta name="generator" content="AList V3">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="AList">
+    <link rel="apple-touch-icon" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png">
+    <script src="static/js/aliyun-web-office-sdk.min.js" async=""></script>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg">
+    <title>一品资源库</title>
+    <script>
+      window.ALIST = {
+        cdn: '',
+        monaco_cdn: undefined,
+        base_path: '/',
+        api: undefined,
+        main_color: '#1890ff',
+      }
+      window.__dynamic_base__ = window.ALIST.cdn || ""
+    </script>
+    
+    
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+    <script>
+(function(){
+var preloads = [{"parentTagName":"head","tagName":"script","attrs":{"type":"module","crossorigin":"","src":"/assets/index.6067d580.js"}},{"parentTagName":"head","tagName":"link","attrs":{"rel":"stylesheet","href":"/assets/index.15d8d646.css"}}];
+function setAttribute(target, attrs) {
+for (var key in attrs) {
+  target.setAttribute(key, attrs[key]);
+}
+return target;
+};
+for(var i = 0; i < preloads.length; i++){
+var item = preloads[i]
+var childNode = document.createElement(item.tagName);
+setAttribute(childNode, item.attrs)
+if( window.__dynamic_base__) {
+  if(item.tagName == 'link') {
+    setAttribute(childNode, { href:  window.__dynamic_base__ + item.attrs.href })
+  } else if (item.tagName == 'script') {
+    setAttribute(childNode, { src:  window.__dynamic_base__ + item.attrs.src })
+  }
+}
+document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
+}
+})();
+</script>
+</body></html></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    
+    <script src="static/js/sweetalert.min.js"></script>
+<!--<script>
+	swal({
+		title: "💛一品's资源库💛",
+		text: "➀ 欢迎访问一品资源库 \n\n➁ QQ交流群511282889\n\n➂ 加群回复密码即可获取\n\n➃ 仅供交流学习，严禁以任何形式贩卖！\n\n一品资源库祝您：生活愉快~",
+		icon: "success",
+		button: "本人已仔细阅读并知晓！",
+	});
+</script>-->
+<script>
+	function search_check() {
+		let web_content = $("#web_content").val().replace(/\s+/g, "");
+		if (web_content == null || web_content == "") {
+			alert("搜索内容不能为空");
+			return false;
+		}
+	}
+	let timer = null;
+
+	function check() {
+		if ($("#root .header-left").length === 1) {
+			$("#root .header-left").after(
+				`<ul>
+				<a href='https://one.io31.top' target='_blank'>
+                    <li style="list-style: none;
+    display: inline-block;
+    padding: 20px 5px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;">官网</li>
+                </a>
+                </ul>`
+				);
+			clearTimeout(timer);
+		} else {
+			setTimeout(check);
+		}
+	}
+	check();
+</script>
+<!--<div class="videocontainer">
+	<video class="fullscreenvideo" id="videoid" autoplay muted loop preload="none" >
+		<script>
+			//<!CDATA[
+			var bodyBgs = [];
+			bodyBgs[0] = "http://input.hyhuo.com/hy-upload/2023/0615/54d2992c752b14e7d344e39546c76ba3/54d2992c75.mp4";
+			bodyBgs[1] = "http://input.hyhuo.com/hy-upload/2023/0615/b283eb5cfb3a27b84886d72c03accc7e/b283eb5cfb.mp4";
+			bodyBgs[2] = "http://input.hyhuo.com/hy-upload/2023/0615/ef6899c47984be9186e8f17e2720f3de/ef6899c479.mp4";
+			bodyBgs[3] = "http://input.hyhuo.com/hy-upload/2023/0615/7808f96ce122274f0d55bdf8e5286912/7808f96ce1.mp4";
+			bodyBgs[4] = "http://input.hyhuo.com/hy-upload/2023/0615/59c926d6dee4e921f958cbbb95645496/59c926d6de.mp4";
+			bodyBgs[5] = "http://input.hyhuo.com/hy-upload/2023/0615/aee946e2382ca3cd1c69b12304b76996/aee946e238.mp4";
+			var randomBgIndex = Math.round(Math.random() * 5);
+			//输出随机的背景视频
+			var src = bodyBgs[randomBgIndex];
+			//document.getElementById("test").innerHTML = " <img src='"+src+"' /> ";
+			document.getElementById("videoid").innerHTML = "<source src='" + src + "' type=video/mp4> ";
+		</script>
+	</video>
+</div>-->
+
+
+<div id="customize" style="display: none;">
+
+	<div>
+
+		<br>
+		<center class="dibu">
+			<div style=" line-height: 20px;font-size: 12pt;font-weight: bold;">
+				<span>
+					"
+					<span style="text-shadow: 2px 2px 6px #d5ebe1;color: #ffffff; font-weight: bold;" id="hitokoto">
+						<a href="#" id="hitokoto_text">
+							"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人."
+						</a>
+					</span> "
+				</span>
+				<p style="margin-left: 10rem;font-size: 8pt;text-shadow: 2px 2px 6px #d5ebe1;color: #ffffff;">
+					<small>
+						—— AnXin's Cloud
+					</small>
+				</p>
+			</div>
+
+			<div style="font-size: 15px; font-weight: bold; color:#000000;">
+				<span class="nav-item">
+					<a class="nav-link" target="_blank">
+						本站由Alist强力驱动
+					</a>
+				</span><br>
+				<span class="nav-item" style="color:#000000;font-size: 12px;">
+					<a class=" nav-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
+						蒙ICP备2022002421
+					</a>
+				</span>
+			</div>
+			<br>
+	</center></div>
+	
+	<br>
+	<br>
+</div>
+
+
+<!--一言API-->
+<script src="static/js/js-js_23hitokoto1.js" defer=""></script>
+<!--延迟加载范围到这里结束-->
+
+
+<!--延迟加载配套使用JS-->
+
+
+<!-- 渐变背景初始化,如果要使用渐变背景把下面的那一行注释去掉即可-->
+<!-- 下面的几行都是渐变的一套,自定义头部内还有一个关联的自定义CSS -->
+<!--<canvas id="canvas-basic"></canvas> -->
+<script src="static/js/granim.min.js"></script>
+<script>
+	var granimInstance = new Granim({
+		element: '#canvas-basic',
+		direction: 'left-right',
+		isPausedWhenNotInView: true,
+		states: {
+			"default-state": {
+				gradients: [
+					['#a18cd1', '#fbc2eb'],
+					['#fff1eb', '#ace0f9'],
+					['#d4fc79', '#96e6a1'],
+					['#a1c4fd', '#c2e9fb'],
+					['#a8edea', '#fed6e3'],
+					['#9890e3', '#b1f4cf'],
+					['#a1c4fd', '#c2e9fb'],
+					['#fff1eb', '#ace0f9']
+
+				]
+			}
+		}
+	});
+</script>
+    <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-polyfill" data-src="/assets/polyfills-legacy.30c689f8.js">!(function() {
+      var e = document.createElement('script')
+      e.src =  window.__dynamic_base__ + document.getElementById('vite-legacy-polyfill').getAttribute('data-src');
+      e.onload = function() {
+        System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+      };
+      document.body.appendChild(e)
+    })();</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy.1e7a7ff9.js"></script>
+  </body>
+</html>
