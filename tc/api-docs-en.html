@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en" dir="ltr" class="device-nonmobile tone-light unsafe-blur-off" prefix="og: http://ogp.me/ns#">
+<head>
+        <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+            <meta name="description" content="IMG.TG API 文档">
+            <title>API 文档 - TG 图床 (English)</title>
+    <meta name="generator" content="Chevereto 3">
+<link rel="stylesheet" href="static/css/peafowl.min.css">
+<link rel="stylesheet" href="static/css/style.min.css">
+
+<link rel="stylesheet" href="static/css/all.min.css">
+<script data-cfasync="false">document.documentElement.className+=" js";var devices=["phone","phablet","tablet","laptop","desktop","largescreen"],window_to_device=function(){for(var e=[480,768,992,1200,1880,2180],t=[],n="",d=document.documentElement.clientWidth||document.getElementsByTagName("body")[0].clientWidth||window.innerWidth,c=0;c<devices.length;++c)d>=e[c]&&t.push(devices[c]);for(0==t.length&&t.push(devices[0]),n=t[t.length-1],c=0;c<devices.length;++c)document.documentElement.className=document.documentElement.className.replace(devices[c],""),c==devices.length-1&&(document.documentElement.className+=" "+n),document.documentElement.className=document.documentElement.className.replace(/\s+/g," ");if("laptop"==n||"desktop"==n){var o=document.getElementById("pop-box-mask");null!==o&&o.parentNode.removeChild(o)}};window_to_device(),window.onresize=window_to_device;function jQueryLoaded(){!function(n,d){n.each(readyQ,function(d,e){n(e)}),n.each(bindReadyQ,function(e,i){n(d).bind("ready",i)})}(jQuery,document)}!function(n,d,e){function i(d,e){"ready"==d?n.bindReadyQ.push(e):n.readyQ.push(d)}n.readyQ=[],n.bindReadyQ=[];var u={ready:i,bind:i};n.$=n.jQuery=function(n){return n===d||void 0===n?u:void i(n)}}(window,document);
+            </script>
+
+    <link rel="shortcut icon" href="https://img.tg/content/images/system/favicon_1577485637816_5e2bd1.png">
+    <link rel="icon" type="image/png" href="https://img.tg/content/images/system/favicon_1577485637816_5e2bd1.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://img.tg/content/images/system/favicon_1577485637816_5e2bd1.png" sizes="180x180">
+        <meta property="og:type" content="website">
+<meta property="og:url" content="https://img.tg/page/api-docs">
+<meta property="og:title" content="全球 CDN 免费图床 (IMG.TG)">
+<meta property="og:image" content="https://img.tg/content/images/system/home_cover_1615788780887_575c38.jpg">
+<meta property="og:site_name" content="TG 图床">
+<meta property="og:description" content="IMG.TG API 文档">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="IMG.TG API 文档">
+<meta name="twitter:title" content="API 文档 (English)">
+<style>
+a,
+a.number-figures:hover, a.number-figures:hover *,
+.input .icon--input-submit:hover, .input .icon--input-submit:focus, .input .icon--input-submit.focus,
+.btn.default.outline, .pop-btn-text,
+.top-bar .top-btn-text:hover:not(.btn), .top-bar .opened .top-btn-text:not(.btn),
+.tone-light .top-bar .top-btn-text:hover:not(.btn), .tone-light .top-bar .opened .top-btn-text:not(.btn),
+.tone-dark .top-bar .top-btn-text:hover:not(.btn), .tone-dark .top-bar .opened .top-btn-text:not(.btn),
+.ios .top-bar .opened .top-btn-text:not(.btn),
+.ios .top-bar .opened .top-btn-text:not(.top-btn-number),
+.breadcrum-text a:hover,
+.content-tabs li:hover a,
+.upload-box-heading .icon,
+.list-item-image-btn:hover span,
+.content-listing-pagination a:hover,
+.input-with-button button:focus, .input-with-button button:hover {
+	color: #8cc9ea;
+}
+
+.menu-box [role=button]:hover,
+input:focus, textarea:focus, select:focus, input.search:focus, .input-focus,
+.tone-dark input:focus, .tone-dark textarea:focus, .tone-dark select:focus, .tone-dark input.search:focus, .tone-dark .input-focus,
+.btn.default.outline,
+.btn.active,
+.content-tabs li:hover, .content-tabs li.current, .content-tabs li.visited, .content-tabs li.visited:hover,
+.content-tabs li.current,
+.list-item:hover .list-item-avatar-cover,
+input:focus, textarea:focus, select:focus, input.search:focus, .input-focus,
+.tone-dark input:focus, .tone-dark textarea:focus, .tone-dark select:focus, .tone-dark input.search:focus, .tone-dark .input-focus,
+.panel-thumb-list li.current,
+.fancy-fieldset input:focus, .fancy-fieldset input:focus[type=text], .fancy-fieldset select:focus, .fancy-fieldset textarea:focus {
+	border-color: #8cc9ea;
+}
+
+.btn.active,
+html:not(.phone) .pop-box-menu a:hover, .pop-box-menu a.focus,
+.list-item-image-btn.liked,
+.list-item-desc .user:hover {
+	background-color: #8cc9ea;
+}
+
+.pop-btn-text .arrow-down,
+.top-bar .top-btn-text:hover .arrow-down, .top-bar .opened .arrow-down,
+.ios .top-bar .opened .top-btn-text .arrow-down,
+.header-content-breadcrum a:hover .arrow-down {
+	border-top-color: #8cc9ea;
+}
+
+.top-bar ul .pop-btn.current, .top-bar ul .top-btn-el.current {
+	border-bottom-color: #8cc9ea;
+}
+
+.header-content-breadcrum a:hover .arrow-right {
+	border-left-color: #8cc9ea;
+}
+
+input:focus, textarea:focus, select:focus, input.search:focus, .input-focus {
+	box-shadow: 0 0 8px 0 rgba(140,201,234,.45);
+}
+</style>
+            <link rel="alternate" hreflang="x-default" href="api-docs.html">
+            <link rel="alternate" hreflang="tr" href="api-docs-tr.html">
+<link rel="alternate" hreflang="ru" href="api-docs-ru.html">
+<link rel="alternate" hreflang="nl" href="api-docs-nl.html">
+<link rel="alternate" hreflang="es" href="api-docs-es.html">
+<link rel="alternate" hreflang="it" href="api-docs-it.html">
+<link rel="alternate" hreflang="ja" href="api-docs-ja.html">
+<link rel="alternate" hreflang="th" href="api-docs-th.html">
+<link rel="alternate" hreflang="zh-cn" href="api-docs-zh-CN.html">
+<link rel="alternate" hreflang="en" href="">
+<link rel="alternate" hreflang="zh-tw" href="api-docs-zh-TW.html">
+<link rel="alternate" hreflang="fr" href="api-docs-fr.html">
+<link rel="alternate" hreflang="id" href="api-docs-id.html">
+<link rel="alternate" hreflang="vi" href="api-docs-vi.html">
+<link rel="alternate" hreflang="de" href="api-docs-de.html">
+<link rel="alternate" hreflang="ko" href="api-docs-ko.html">
+</head>
+
+<body id="api-docs.php" class="">
+    <header id="top-bar" class="top-bar">
+        <div class="content-width">
+                        <div id="logo" class="top-bar-logo"><a href="index.html"><img src="static/picture/logo_1615892600298_04fed2.png" alt="TG 图床"></a></div>
+
+                            <ul class="top-bar-left float-left">
+                    <li data-action="top-bar-menu-full" data-nav="mobile-menu" class="top-btn-el phone-show hidden">
+                        <span class="top-btn-text"><span class="icon fas fa-bars"></span></span>
+                    </li>
+                    
+                    
+                                    </ul>
+                        <ul class="top-bar-right float-right keep-visible">
+
+                                                <li data-action="top-bar-upload" data-link="" data-nav="upload" class="top-btn-el phone-hide" data-login-needed="true">
+                        <span class="top-btn-text"><span class="icon fas fa-cloud-upload-alt"></span><span class="btn-text phone-hide phablet-hide">Upload</span></span>
+                    </li>
+                
+                                    <li id="top-bar-signin" data-nav="signin" class="top-btn-el">
+                        <a href="login.html" class="top-btn-text"><span class="icon fas fa-sign-in-alt"></span><span class="btn-text phone-hide phablet-hide">Sign in</span>
+                        </a>
+                    </li>
+                                            <li data-nav="language" class="phablet-hide phone-hide pop-btn">
+                        <span class="top-btn-text">
+                <span class="icon fas fa-language"></span><span class="btn-text">EN</span>
+            </span>
+            <div class="pop-box pbcols3 arrow-box arrow-box-top anchor-center">
+                <div class="pop-box-inner pop-box-menu pop-box-menucols">
+                    <ul>
+                        <li><a href="api-docs-tr.html">Türkçe</a></li>
+<li><a href="api-docs-ru.html">Русский</a></li>
+<li><a href="api-docs-nl.html">Nederlands</a></li>
+<li><a href="api-docs-es.html">Español</a></li>
+<li><a href="api-docs-it.html">Italiano</a></li>
+<li><a href="api-docs-ja.html">日本語</a></li>
+<li><a href="api-docs-th.html">ไทย</a></li>
+<li><a href="api-docs-zh-CN.html">简体中文</a></li>
+<li class="current"><a href="">English</a></li>
+<li><a href="api-docs-zh-TW.html">繁體中文</a></li>
+<li><a href="api-docs-fr.html">Français</a></li>
+<li><a href="api-docs-id.html">Bahasa Indonesia</a></li>
+<li><a href="api-docs-vi.html">Tiếng Việt</a></li>
+<li><a href="api-docs-de.html">Deutsch</a></li>
+<li><a href="api-docs-ko.html">한국어</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+                                                                <li data-nav="about" class="phone-hide pop-btn pop-keep-click">
+                            <span class="top-btn-text">
+                                <span class="icon far fa-question-circle"></span><span class="btn-text phone-hide phablet-hide laptop-hide tablet-hide desktop-hide">About</span>
+                            </span>
+                            <div class="pop-box arrow-box arrow-box-top anchor-right">
+                                <div class="pop-box-inner pop-box-menu">
+                                    <ul>
+                                                                                    <li class="with-icon"><a href="about.html"><span class="btn-icon fas fa-info"></span> 关于本站</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="change-log.html"><span class="btn-icon fas fa-bookmark"></span> 图床日志</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="donation.html"><span class="btn-icon fab fa-bitcoin"></span> 赞助我们</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="contact.html"><span class="btn-icon fas fa-at"></span> 联系我们</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="api-docs.html"><span class="btn-icon fas fa-file-code"></span> API 文档</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="tos.html"><span class="btn-icon fas fa-landmark"></span> 服务条款</a>
+                                            </li>
+                                                                <li class="with-icon"><a href="privacy.html"><span class="btn-icon fas fa-lock"></span> 隐私政策</a>
+                                            </li>
+                                                        </ul>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </header>
+    
+<div class="center-box c24">
+	<div class="content-width">
+		<div class="header default-margin-bottom">
+			<h1>API 文档</h1>
+		</div>
+		<div class="text-content">
+			<p>IMG.TG 并不开放公共 API 以防止滥用，如果有需要请通过 <a href="donation.html">赞助</a> 开通您的专属 API。</p>
+			<p>API 没有速率限制，但受到 IMG.TG <a href="change-log.html">上传限制</a> 的影响，您应该只将 API 用于自己的应用程序而不是公开使用。</p>
+			<h2>API Key</h2>
+			<p>赞助后我们会通过邮件发送给您唯一的 API 密钥，因 API 密钥泄露导致的滥用我们将封禁您的账户，请务必妥善保管。</p>
+			<h2>请求方法</h2>
+			<p>API 的调用可以使用 POST 或 GET 请求方法，但由于 GET 请求受 URL 最大允许长度限制，建议优先选择 POST 请求方法。</p>
+			<h2>请求格式</h2>
+			<textarea id="pup-insert-code" class="r2 resize-vertical" autocomplete="off" spellcheck="false" readonly="">https://img.tg/<UserID>/<ApiVersion>/<action>/</textarea>
+			<h2>请求参数</h2>
+			<ul>
+			<li>[UserID]: 您可以在 <a href="login1.html">设置页面</a> 中看到您的用户 ID</li>
+			<li>[ApiVersion]: 当前 API 版本为 v1 [values: 1]</li>
+			<li>[key]: API 密钥</li>
+			<li>[action]: 您想要执行的操作 [values: upload]</li>
+			<li>[source]: 图像 URL 或 base64 编码的图像字符串，您还可以在请求中使用 FILES["source"]</li>
+			<li>[format]: 设置返回格式 [values: json | txt | redirect]</li>
+			</ul>
+			<h2>调用示例</h2>
+			<p>假设您的用户 ID 为 1000：</p>
+			<textarea id="pup-insert-code" class="r2 resize-vertical" autocomplete="off" spellcheck="false" readonly="">POST https://img.tg/1000/1/upload/?key=apikey123456&source=https://image.url/image.jpg&format=json</textarea>
+			<p>注意：在上传本地文件时，请始终使用 POST 方法，由于编码字符或 GET 请求的 URL 长度限制，URL 编码可能会改变 base64 来源。</p>
+			<h2>API 响应</h2>
+			<p>API 的响应将根据格式参数而有所不同：</p>
+			<ul>
+			<li>[json]: 以 JSON 格式显示所有已上传的图像信息。[默认]</li>
+			<li>[txt]: 以 text/plain 格式返回图片直链。</li>
+			<li>[redirect]: 重定向到本站图片页面。</li>
+			</ul>
+			<p>使用 JSON 时，响应将具有头部状态码，以便您可以轻松地注意到请求是否成功，它还会输出 status_txt 和 status_code 属性。</p>
+			<h3>响应示例 (JSON)</h3>
+			<textarea id="pup-insert-code" class="r2 resize-vertical" autocomplete="on" spellcheck="false" readonly="">
+{
+    "status_code": 200,
+    "success": {
+        "message": "image uploaded",
+        "code": 200
+    },
+    "image": {
+        "name": "example",
+        "extension": "png",
+        "size": 53237,
+        "width": 1151,
+        "height": 898,
+        "date": "2014-06-04 15:32:33",
+        "date_gmt": "2014-06-04 19:32:33",
+        "storage_id": null,
+        "description": null,
+        "nsfw": "0",
+        "md5": "c684350d722c956c362ab70299735830",
+        "storage": "datefolder",
+        "original_filename": "example.png",
+        "original_exifdata": null,
+        "views": "0",
+        "id_encoded": "L",
+        "filename": "example.png",
+        "ratio": 1.2817371937639,
+        "size_formatted": "52 KB",
+        "mime": "image/png",
+        "bits": 8,
+        "channels": null,
+        "url": "https://img.tg/images/2023/10/22/example.png",
+        "url_viewer": "https://img.tg/image/L",
+        "thumb": {
+            "filename": "example.th.png",
+            "name": "example.th",
+            "width": 160,
+            "height": 160,
+            "ratio": 1,
+            "size": 17848,
+            "size_formatted": "17.4 KB",
+            "mime": "image/png",
+            "extension": "png",
+            "bits": 8,
+            "channels": null,
+            "url": "https://img.tg/images/2023/10/22/example.th.png"
+        },
+        "medium": {
+            "filename": "example.md.png",
+            "name": "example.md",
+            "width": 500,
+            "height": 390,
+            "ratio": 1.2820512820513,
+            "size": 104448,
+            "size_formatted": "102 KB",
+            "mime": "image/png",
+            "extension": "png",
+            "bits": 8,
+            "channels": null,
+            "url": "https://img.tg/images/2023/10/22/example.md.png"
+        },
+        "views_label": "views",
+        "display_url": "https://img.tg/images/2023/10/22/example.md.png",
+        "how_long_ago": "moments ago"
+    },
+    "status_txt": "OK"
+}
+			</textarea>
+			<h3>响应示例 (txt)</h3>
+			<textarea id="pup-insert-code" class="r2 resize-vertical" autocomplete="off" spellcheck="false" readonly="">https://img.tg/images/2023/10/22/example.png</textarea>
+			<h3>响应示例 (redirect)</h3>
+			<textarea id="pup-insert-code" class="r2 resize-vertical" autocomplete="off" spellcheck="false" readonly="">https://img.tg/image/example</textarea>
+			<h2>其他使用方法参考</h2>
+			<p>PicGo：<a href="https://hostloc.com/thread-700296-1-1.html">IMG.TG 使用 API 对接 PicGo 实现截图自动上传</a></p>
+			<p>Discuz：<a href="https://greasyfork.org/zh-CN/scripts/404876">IMG.TG Discuz 论坛图片上传插件</a></p>
+
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		if(typeof CHV == "undefined") {
+			CHV = {obj: {}, fn: {}, str:{}};
+		} else {
+			if(typeof CHV.obj.embed_tpl == "undefined") {
+				CHV.obj.embed_tpl = {};
+			}
+		}
+		CHV.obj.embed_tpl = {"links":{"label":"Links","options":{"direct-links":{"label":"Direct links","template":"%URL%","size":"full"},"viewer-links":{"label":"Viewer links","template":"%URL_SHORT%","size":"viewer"}}},"html-codes":{"label":"HTML Codes","options":{"html-embed":{"label":"HTML image","template":"<img src=\"%URL%\" alt=\"%FILENAME%\" border=\"0\">","size":"full"},"html-embed-full":{"label":"HTML full linked","template":"<a href=\"%URL_SHORT%\"><img src=\"%URL%\" alt=\"%FILENAME%\" border=\"0\"><\/a>","size":"full"},"html-embed-medium":{"label":"HTML medium linked","template":"<a href=\"%URL_SHORT%\"><img src=\"%MEDIUM_URL%\" alt=\"%MEDIUM_FILENAME%\" border=\"0\"><\/a>","size":"medium"},"html-embed-thumbnail":{"label":"HTML thumbnail linked","template":"<a href=\"%URL_SHORT%\"><img src=\"%THUMB_URL%\" alt=\"%THUMB_FILENAME%\" border=\"0\"><\/a>","size":"thumb"}}},"bbcodes":{"label":"BBCodes","options":{"bbcode-embed":{"label":"BBCode full","template":"[img]%URL%[\/img]","size":"full"},"bbcode-embed-full":{"label":"BBCode full linked","template":"[url=%URL_SHORT%][img]%URL%[\/img][\/url]","size":"full"},"bbcode-embed-medium":{"label":"BBCode medium linked","template":"[url=%URL_SHORT%][img]%MEDIUM_URL%[\/img][\/url]","size":"medium"},"bbcode-embed-thumbnail":{"label":"BBCode thumbnail linked","template":"[url=%URL_SHORT%][img]%THUMB_URL%[\/img][\/url]","size":"thumb"}}},"markdown":{"label":"Markdown","options":{"markdown-embed":{"label":"Markdown full","template":"![%FILENAME%](%URL%)","size":"full"},"markdown-embed-full":{"label":"Markdown full linked","template":"[![%FILENAME%](%URL%)](%URL_SHORT%)","size":"full"},"markdown-embed-medium":{"label":"Markdown medium linked","template":"[![%MEDIUM_FILENAME%](%MEDIUM_URL%)](%URL_SHORT%)","size":"medium"},"markdown-embed-thumbnail":{"label":"Markdown thumbnail linked","template":"[![%THUMB_FILENAME%](%THUMB_URL%)](%URL_SHORT%)","size":"thumb"}}}};
+	});
+</script>
+<div data-modal="form-embed-codes" class="hidden">
+	<span class="modal-box-title">Embed codes</span>
+    <div class="image-preview"></div>
+	<div class="input-label margin-bottom-0 copy-hover-display">
+		<div class="c7 margin-bottom-10">
+			<select name="form-embed-toggle" id="form-embed-toggle" class="text-input" data-combo="form-embed-toggle-combo">
+				<optgroup label="Links">
+	<option value="direct-links" data-size="full">Direct links</option>
+	<option value="viewer-links" data-size="viewer">Viewer links</option>
+</optgroup><optgroup label="HTML Codes">
+	<option value="html-embed" data-size="full">HTML image</option>
+	<option value="html-embed-full" data-size="full">HTML full linked</option>
+	<option value="html-embed-medium" data-size="medium">HTML medium linked</option>
+	<option value="html-embed-thumbnail" data-size="thumb">HTML thumbnail linked</option>
+</optgroup><optgroup label="BBCodes">
+	<option value="bbcode-embed" data-size="full">BBCode full</option>
+	<option value="bbcode-embed-full" data-size="full">BBCode full linked</option>
+	<option value="bbcode-embed-medium" data-size="medium">BBCode medium linked</option>
+	<option value="bbcode-embed-thumbnail" data-size="thumb">BBCode thumbnail linked</option>
+</optgroup><optgroup label="Markdown">
+	<option value="markdown-embed" data-size="full">Markdown full</option>
+	<option value="markdown-embed-full" data-size="full">Markdown full linked</option>
+	<option value="markdown-embed-medium" data-size="medium">Markdown medium linked</option>
+	<option value="markdown-embed-thumbnail" data-size="thumb">Markdown thumbnail linked</option>
+</optgroup>			</select>
+		</div>
+		<div id="form-embed-toggle-combo">
+			<div data-combo-value="direct-links" class="switch-combo">
+							<textarea id="modal-embed-code-0" class="r3 resize-vertical" name="direct-links" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-0">copy</button>
+						</div>
+<div data-combo-value="viewer-links" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-1" class="r3 resize-vertical" name="viewer-links" data-size="viewer" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-1">copy</button>
+						</div>
+<div data-combo-value="html-embed" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-2" class="r3 resize-vertical" name="html-embed" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-2">copy</button>
+						</div>
+<div data-combo-value="html-embed-full" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-3" class="r3 resize-vertical" name="html-embed-full" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-3">copy</button>
+						</div>
+<div data-combo-value="html-embed-medium" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-4" class="r3 resize-vertical" name="html-embed-medium" data-size="medium" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-4">copy</button>
+						</div>
+<div data-combo-value="html-embed-thumbnail" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-5" class="r3 resize-vertical" name="html-embed-thumbnail" data-size="thumb" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-5">copy</button>
+						</div>
+<div data-combo-value="bbcode-embed" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-6" class="r3 resize-vertical" name="bbcode-embed" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-6">copy</button>
+						</div>
+<div data-combo-value="bbcode-embed-full" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-7" class="r3 resize-vertical" name="bbcode-embed-full" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-7">copy</button>
+						</div>
+<div data-combo-value="bbcode-embed-medium" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-8" class="r3 resize-vertical" name="bbcode-embed-medium" data-size="medium" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-8">copy</button>
+						</div>
+<div data-combo-value="bbcode-embed-thumbnail" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-9" class="r3 resize-vertical" name="bbcode-embed-thumbnail" data-size="thumb" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-9">copy</button>
+						</div>
+<div data-combo-value="markdown-embed" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-10" class="r3 resize-vertical" name="markdown-embed" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-10">copy</button>
+						</div>
+<div data-combo-value="markdown-embed-full" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-11" class="r3 resize-vertical" name="markdown-embed-full" data-size="full" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-11">copy</button>
+						</div>
+<div data-combo-value="markdown-embed-medium" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-12" class="r3 resize-vertical" name="markdown-embed-medium" data-size="medium" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-12">copy</button>
+						</div>
+<div data-combo-value="markdown-embed-thumbnail" class="switch-combo soft-hidden">
+							<textarea id="modal-embed-code-13" class="r3 resize-vertical" name="markdown-embed-thumbnail" data-size="thumb" data-focus="select-all"></textarea>
+							<button class="input-action" data-action="copy" data-action-target="#modal-embed-code-13">copy</button>
+						</div>
+		</div>
+	</div>
+</div><div id="modal-share" class="hidden">
+	<span class="modal-box-title">Share</span>
+    <div class="image-preview"></div>
+    <p class="highlight margin-bottom-20 font-size-small text-align-center" data-content="privacy-private">__privacy_notes__</p>
+	<ul class="panel-share-networks">
+			</ul>
+	<div class="input-label margin-bottom-0">
+        <label for="modal-share-url">Link</label>
+        <div class="position-relative">
+            <input type="text" name="modal-share-url" id="modal-share-url" class="text-input" value="__url__" data-focus="select-all" readonly="">
+            <button class="input-action" data-action="copy" data-action-target="#modal-share-url" value="">copy</button>
+        </div>
+    </div>
+</div><script defer="" data-cfasync="false" src="static/js/scripts.min.js" id="jquery-js" onload="jQueryLoaded(this, event)"></script>
+<script defer="" data-cfasync="false" src="static/js/peafowl.min.js" id="peafowl-js"></script>
+<script defer="" data-cfasync="false" src="static/js/chevereto.min.js" id="chevereto-js"></script>
+<script data-cfasync="false">var CHEVERETO = {"id":"","edition":"Chevereto","version":"3.20.20","source":{"label":"chevereto.com","url":"https:\/\/chevereto.com\/panel\/downloads"},"api":{"download":"https:\/\/chevereto.com\/api\/download","license":{"check":"https:\/\/chevereto.com\/api\/license\/check"},"get":{"info":"https:\/\/chevereto.com\/api\/get\/info\/3"}}}</script>
+
+<script data-cfasync="false">
+	document.getElementById("chevereto-js").addEventListener("load", function() {
+		PF.obj.devices = window.devices;
+		PF.fn.window_to_device = window.window_to_device;
+		PF.obj.config.base_url = "https://img.tg";
+		PF.obj.config.json_api = "https://img.tg/json";
+				PF.obj.config.listing.items_per_page = "24";
+		PF.obj.config.listing.device_to_columns = {"phone":"1","phablet":"3","tablet":"4","laptop":"5","desktop":"6","largescreen":"6"};
+		PF.obj.config.auth_token = "2e3647081a60639eae0130c5132d1ffb8724818f";
+
+		PF.obj.l10n = [];
+
+		if (typeof CHV == "undefined") {
+			CHV = {
+				obj: {},
+				fn: {},
+				str: {}
+			};
+		}
+
+		CHV.obj.vars = {
+			urls: {
+				home: PF.obj.config.base_url,
+				search: "https://img.tg/search",
+				login: "https://img.tg/login",
+			}
+		};
+
+		PF.obj.vars = $.extend({}, CHV.obj.vars);
+
+		CHV.obj.config = {
+			image: {
+				max_filesize: "5 MB",
+				right_click: true,
+				load_max_filesize: "5 MB",
+				max_width: "0",
+				max_height: "0",
+			},
+			upload: {
+				redirect_single_upload: false,
+				threads: "5",
+                image_types: ["jpg","png","bmp","gif","webp","jpeg"],
+                moderation: false,  
+			},
+			user: {
+				avatar_max_filesize: "2 MB",
+				background_max_filesize: "5 MB",
+			},
+			recaptcha: {
+				enabled: false,
+				sitekey: "",
+			},
+			listing: {
+				viewer: true,
+			}
+		};
+
+				CHV.obj.page_info = {"doctitle":"API \u6587\u6863 - TG \u56fe\u5e8a (English)","pre_doctitle":"API \u6587\u6863","pos_doctitle":" - TG \u56fe\u5e8a (English)"};
+
+			});
+</script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147971757-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147971757-2');
+</script>
+</body>
+</html>
