@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en" translate="no"><!--<![qlam.cc]-->
+	<link rel="apple-touch-icon-precomposed" href="./img/apple.ico">
+	<head>
+		<script src="static/js/clipboard.min.js"></script>
+		<link href="https://appleid.cdn-apple.com/daw/IDMSWebAuth/static/24Mar2023/images/favicon.ico"
+			rel="shortcut icon" type="image/x-icon" />
+		<title>专业获取iOS设备的UDID</title>
+		<meta name="keywords" content="udid,UDID,获取udid,获取UDID,UDID获取,udid获取,udids,UDIDS,屏蔽iOS更新,屏蔽更新,ios屏蔽更新">
+		<meta name="description" content="专业获取iOS设备的UDID平台(udids.cn)为设备提供免费的UDID获取功能，帮助用户最快的方式快速安装并查询UDID">
+		<meta property="og:type" content="webpage">
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				color: #333;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				line-height: 1.42857;
+			}
+
+			#content {
+				width: 96%;
+				padding: 0px 0;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			#header {
+				background-color: #1aa79a;
+				height: 120px;
+				margin: 10px;
+				border-radius: 20px;
+				box-shadow: 0 0 10px #2e907ebd;
+				color: white;
+				font-size: 50px;
+				padding-top: 40px;
+				text-align: center;
+			}
+
+			#showText {
+				font-size: 18px;
+				width: 90%;
+				padding: 0;
+				height: 40px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			#show {
+				font-size: 18px;
+				width: 100%;
+				padding: 0;
+				height: 40px;
+				text-align: center;
+				border: none;
+			}
+
+			.udid-intro {
+				color: #8c9293;
+				line-height: 24px;
+			}
+
+			#footer {
+				border-top: 1px solid #979797;
+				font-family: "Roboto Slab", "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+				margin-top: 50px;
+				padding-bottom: 70px;
+				padding-top: 30px;
+				text-align: center;
+
+			}
+
+			.buttons {
+				background: #000000 none repeat scroll 0 0;
+				border: 1px solid #777;
+				border-radius: 8px;
+				box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(0, 0, 0, 0.2);
+				color: #fff;
+				cursor: pointer;
+				font-family: "Microsoft Yahei", Arial, Tahoma, sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: bold;
+				padding: 8px 12px;
+				margin-left: 10px;
+				text-decoration: none;
+				text-shadow: -1px -1px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 255, 255, 0.75);
+				text-transform: none;
+				white-space: nowrap;
+
+			}
+
+			.reg-page {
+				color: #555;
+				padding: 30px;
+				background: #fefefe;
+				border: 0px solid #eee;
+				box-shadow: 0 0 3px #eee0;
+			}
+		</style>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:type" content="webpage">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="stylesheet" href="static/css/header_include_fashion.min.css">
+		<script type="text/javascript" async="" src="static/js/linkid.js"></script>
+		<script type="text/javascript" async=""
+			src="static/js/0c89035ae0aa46f481fac1662d0f8550.js"></script>
+		<script type="text/javascript" async="" src="static/js/analytics.js"></script>
+		<script type="text/javascript" async=""
+			src="static/js/c312ac74704c46de84ebf2e11be96afd.js"></script>
+		<script src="static/js/hm.js"></script>
+		<script async="" src="static/js/25fef4c2af824b23bee694fbb539ebec.js"></script>
+		</script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?1904558f1b1333eeb55cae57ca42f896";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+	<body class="tools-box" style="">
+		<div class="container-fluid" id="toolNav" style="background: #ecf1f3;">
+		</div>
+		<div class="container-fluid wrapper">
+			<div class="container content inner-content" style="padding-bottom:40px;">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+						<div class="row text-center">
+							<div class="margin-bottom-30">
+								<br><br>
+								<h2 class="font-48 fw-800 color-333">专业获取iOS设备的UDID</h2>
+							</div>
+						</div>
+
+						<div class="row text-center">
+							<div id="content">
+								<br><br>
+								<input id="showText" placeholder="点击下方“获取”即可查看本机UDID" style="pointer-events: none;"
+									value="" />
+								<br>
+								<input id="show" placeholder="本设备型号" style="pointer-events: none;"
+									value="" />
+								<br><br>
+								<a class="buttons" href="/tool/udid.mobileconfig" target="_blank">获取UDID</a>
+								<a class="buttons" id="copyButton" data-clipboard-target="#showText">复制UDID</a>
+								<a class="buttons" href="/tool" target="_blank">OTA Block</a>
+								<!--<a class="buttons" href="./img/tg.png" target="_blank">搭建同款站</a>-->
+
+								<br><br>
+
+
+								<!-- <a class="buttons" href="xxapp://?function=valid&uuid=&secret=dhasdjh5521673hghdsah">ipa</a> -->
+
+								<script type="text/javascript">
+									//init
+									var clipboard = new ClipboardJS('#copyButton');
+									clipboard.on('success', function(e) {
+										var udidInput = document.getElementById('showText');
+										if (udidInput.value) {
+											alert('复制成功！');
+										}
+										e.clearSelection();
+									});
+
+									document.getElementById('copyButton').addEventListener('click', function() {
+										var udidInput = document.getElementById('showText');
+										if (!udidInput.value) {
+											alert('请先获取UDID再进行复制！');
+											return;
+										}
+									});
+								</script>
+								<br>
+								<div class="col-md-12">
+									<p class="mb-40 color-8c9497 font-16">请使用 <span class="color-blue">iPhone</span> 或
+										<span class="color-blue">iPad</span> 上的 Safari 浏览器打开本页面，即可快速获取 UDID
+									</p>
+									<hr style="margin-bottom: 8px">
+									<div class="row text-center" id="UDIDQR">
+										<div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
+											<div class="reg-page">
+
+												<div class="row mt-0">
+													<div
+														class="col-md-12 text-left font-16 fw-600 color-000  text-center">
+														步骤说明 </div>
+													<div class="col-md-12  text-center">
+														<div class="step-box">
+															<p><img src="static/picture/jiaocheng1.png"
+																	class="img-responsive center-block"></p>
+															<p>请点击 <span>允许</span> 安装描述文件，回到桌面，打开 <span>设置 -
+																	通用</span>，找到并点击打开 <span>VPN 与设备管理</span></p>
+														</div>
+													</div>
+													<div class="col-md-12  text-center">
+														<div class="step-box">
+															<p><img src="static/picture/jiaocheng2.png"
+																	class="img-responsive center-block"></p>
+															<p>在弹出的页面中点击右上角的 <span>安装</span> 按钮，然后输入 <span>锁屏密码</span>
+																进行安装
+															</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-10 col-md-offset-1 input-group margin-bottom-20 mt-0">
+								<hr style="margin-bottom: 8px">
+								<br><br><br>
+								<p class="font-18 color-333">什么是UDID?</p>
+								<p class="color-8c9497 mb-35">UDID，是 iOS 设备的一个唯一识别码，每台 iOS
+									设备都有一个独一无二的编码，这个编码，我们称之为识别码，也叫做UDID（ Unique Device Identifier）。</p>
+								<p class="font-18 color-333 ">扫描后系统提示输入密码?</p>
+								<p class="color-8c9497 mb-35">如果您扫描后系统提示输入密码，请输入锁屏密码。</p>
+								<p class="font-18 color-333">获取 UDID 是否安全?</p>
+								<p class="color-8c9497 mb-35">安全，您可以放心使用。该功能不会在第三方服务器上存储您的任何数据，并且传输到浏览器的所有数据都使用256 位 AES
+									加密，以防止劫持。</p>
+							</div>
+							<hr style="margin-bottom: 8px">
+							<center style="padding: 0;margin:0;list-style: none">
+								<br><img src="static/picture/beian.png" class="w-full" style="width: 16px;"><a
+									href="https://beian.mps.gov.cn/#/query/webSearch?code=11010602200875\"
+									rel=\"noreferrer\" target=\"_blank\">京公网安备11010602200875</a>
+								<br><img src="static/picture/anquan.png" class="w-full" style="width: 16px;"><a
+									href="https://beian.miit.gov.cn/">京ICP备2023036863号-1</a>
+							</center>
+</html>
+<script type="text/javascript">
+	var browser = {
+		versions: function() {
+			var u = navigator.userAgent,
+				app = navigator.appVersion;
+			return { //移动终端浏览器版本信息
+				trident: u.indexOf('Trident') > -1, //IE内核
+				presto: u.indexOf('Presto') > -1, //opera内核
+				webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+				mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+				ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				iPad: u.indexOf('iPad') > -1, //是否iPad
+				webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+			};
+		}(),
+		language: (navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+
+	function is_weixin() {
+		var ua = navigator.userAgent.toLowerCase();
+		var isIosQQ = (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /\sQQ/i.test(navigator.userAgent));
+		var isAndroidQQ = (/(Android)/i.test(navigator.userAgent) && /MQQBrowser/i.test(navigator.userAgent) && /\sQQ/i
+			.test((navigator.userAgent).split('MQQBrowser')));
+		var isQQ = isIosQQ || isAndroidQQ;
+		if (ua.match(/MicroMessenger/i) == "micromessenger" || isQQ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	var isWeixin = is_weixin();
+	var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement
+		.clientHeight;
+
+	function loadHtml() {
+
+		var div = document.createElement('div');
+		div.id = 'weixin-tip';
+		if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+			div.innerHTML =
+				'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="static/picture/safari.png" alt="QLAM.CC"/></p>';
+		} else if (browser.versions.android) {
+			div.innerHTML =
+				'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="static/picture/safari.png" alt="QLAM.CC"/></p>';
+		}
+		document.body.appendChild(div);
+	}
+
+	function loadStyleText(cssText) {
+		var style = document.createElement('style');
+		style.rel = 'stylesheet';
+		style.type = 'text/css';
+		try {
+			style.appendChild(document.createTextNode(cssText));
+		} catch (e) {
+			style.styleSheet.cssText = cssText; //ie9以下
+		}
+		var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+		head.appendChild(style);
+	}
+	var cssText =
+		"#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+	if (isWeixin) {
+		loadHtml();
+		loadStyleText(cssText);
+	}
+</script>
