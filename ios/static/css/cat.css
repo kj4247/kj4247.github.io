@@ -1,0 +1,636 @@
+@charset "UTF-8";
+
+#MenuColor{
+		background-color: #f6f6f6;
+	}
+
+.fmall{
+	display: block; 
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.fmtwo{
+	display: flex; 
+	flex-direction: row;
+	border-radius: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+}
+
+.fmimg{
+	display: block;
+	cursor: pointer;
+}
+
+.TopMenu{
+	z-index:9;
+	width: 100%;
+	max-width: 1000px;
+	height: 56px;
+	background-color: #f6f6f6;
+	position: fixed;
+	top:0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.TopMenuWhite{
+	z-index: 9;
+	width: 100%;
+	max-width: 1000px;
+	height: 56px;
+	background-color: #fff;
+	position: fixed;
+	top:0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.Logo{
+	z-index:999;
+	align-self: center;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+.logo_{
+	margin-top:6px;
+	margin-left:22px;
+	margin-right:0px;
+	float:left;
+	background-color:rgba(0,0,0,0.00);
+	background-image:url(../fonts/9bff3074400c4c23af9d16c03a017ceb.ttf);*/
+	font-weight: bolder;
+}
+
+.Bg{
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 15px;
+	padding:20px 20px 20px;
+	width: auto;
+	height: auto;
+}
+
+.BgTg{
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 15px;
+	padding:0px;
+	width: auto;
+	height: auto;
+}
+
+.AppWxr{
+	width: auto;
+	height: 40px;
+	background-color: #eef4ff;
+	color: #3583ff;
+	border-radius: 12px;
+	margin: 0px auto 0px;
+	padding: 0px 15px 0px;
+	text-align: left;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bolder;
+	cursor:pointer;
+}
+
+.AppRow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 0px;
+}
+
+.AppRowNull{
+	display: none;
+}
+
+.App{
+	margin-top: 25px;
+	margin-right: 2px;
+	cursor:pointer;
+}
+
+.AppIcon{
+	display: block;
+	width: 60px;
+	height: 60px;
+	max-width: 100%;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	background-position: center;
+	background-size: contain;
+	border-radius: 16px;
+	border:none;
+	margin: auto;
+}
+
+.AppName{
+	width: 70px;
+	max-width: 100%;
+	display: block;
+	font-size: 11px;
+	text-align: center;
+	font-weight: lighter;
+	color: #565656;
+	margin-top: 6px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SysBg{
+	margin: 0px 15px 1px;
+	height: 100px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#SysBg{
+	margin-top: 15px;
+}
+
+.SysLeft{
+	height: 100px;
+	margin-left: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between
+}
+
+.SysIcon{
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+    border-radius:15px;
+	display: block;
+}
+
+.SysTxt{
+	width: 160px;
+	height: 60px;
+	margin-left: 15px;
+}
+
+.SysTitle{
+	display: block;
+	color: #212121;
+	font-weight: bolder;
+	font-size: 15px;
+	margin-top: 25px;
+}
+
+.SysDes{
+	display: block;
+	color: #b8b8b8;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.SysRight{
+	width: 100px;
+	height: 30px;
+	background-color: #eaeaea;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	margin-right: 15px;
+	color: #666666;
+	margin-top: 35px;
+	cursor:pointer;
+}
+
+.Context{
+	width: 20%;
+	flex-grow: 1px;
+	padding: 18px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	cursor:pointer;
+}
+
+.ContextIcon{
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	display: block;
+	border-radius: 10px;
+}
+
+.ContextPalt{
+	text-align: center;
+	width: 100%;
+	font-weight: lighter;
+	color: #636363;
+	font-size:10px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 8px;
+
+}
+
+.ContextName{
+	text-align: center;
+	width: 100%;
+	/*font-family: sh;*/
+ /*   src: url(../fonts/sh.ttf);*/
+	font-weight: bolder;
+	color: #212121;
+	font-size: 14px;
+	display: block;
+}
+
+.line{
+	width: 80px;
+	height: 1px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #dadada;
+	margin-top: 40px;
+	}
+
+.shuoming{
+		text-align: center;
+		font-size: 12px;
+		color: #d8d8d8;
+		width: 100%;
+		display: block;
+		margin-top: 40px;
+		line-height: 20px;
+		padding-bottom: 50px;
+	}
+
+
+.MenuBtn {
+    display: block;
+    height: 56px;
+    width:56px;
+	background-image:url(../fonts/09e9fd2a12434d36bc07f413751bb030.ttf);	
+    text-align: center;
+	width:280px;
+	height:50px;
+	margin-top:20px;
+	background-color:#f6f6f6;
+	line-height:50px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+	border-radius:100px;
+	margin-bottom:0px;
+}
+
+#menu_txt_top{
+	margin-top:120px;}
+
+
+.menu_pic{
+	background-image:url(../fonts/upload1.svg);
+	width:150px;
+	height:150px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;}
+	
+.menu_txt_bottom{
+	text-align:center;
+	font-size:14px;
+	color:#717171;
+	margin-top:10px;
+	width:120px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	}
+	
+	
+#txt{
+	background:#fff;
+    bottom: 0;
+    border-radius: 0px;
+    color: #000;
+    display: block;
+    height: 240px;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    position:fixed;
+    width: 90%;
+	max-width:360px;
+	margin-top:20px;
+	z-index:-1;
+	border-radius:12px;
+	box-shadow:0px 0px 0px 650px rgba(0,0,0,0.68);
+	}
+	
+.close_pic{
+	color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    height: 18px;
+	margin-top:19px;
+	margin-right:20px;
+    text-transform: uppercase;
+    width:18px;
+    z-index: -1;
+	background-image:url(../images/close.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	float:right;}
+	
+.txt_pic{
+	width:100%;
+	background-color:#252525;
+	height:58px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:12px 12px 0px 0px;
+	margin-bottom:20px;
+	}
+
+.txt_ul{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:0px;
+	}
+	
+.txt_nr{
+	font-size:16px;
+	line-height:22px;
+	color:#97979a;
+	margin-top:10px;
+	list-style-type:none;
+	margin-left:0px;
+	text-decoration:none;
+	text-align:center;
+	}
+	
+#txt_left{
+	text-align:left;}
+	
+#txt_btn{
+	display:block;
+	padding:5px;
+	background-color:#FE5B5D;
+	color:#FFFFFF;
+	border-radius:30px;
+	width:140px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.cnzz{
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	padding: 0px;
+}
+
+.Tg{
+	width: 100%;
+	display: block;
+	height: auto;
+	border-radius: 10px;
+	cursor:pointer;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+	
+	#MenuColor{
+		background-color: #1b1f24;
+	}
+	
+    .TopMenu {
+	background-color: #1b1f24;
+    }
+	.TopMenuWhite {
+	background-color: #1b1f24;
+    }
+	
+	.catName{
+	color: #fefefe;
+}
+	
+	.Url{
+	color: #424b57;
+}
+	.Gg{
+	background-color: #292e32;
+	
+}
+	.GgGrad{
+	background-color: #292e32;
+	
+}
+	.GgTitle{
+	color: #fefefe;
+}
+
+	.GgNr{
+	color: #abbdcf;
+}
+	.IndexNavIn{
+	color: #fefefe;
+	background-color: #292e32;
+}
+
+	.IndexTitle{
+	color: #fefefe;
+}
+	.Bg{
+	background-color: #292e32;
+}
+	.BgTg{
+	background-color: #292e32;
+}
+	.AppWxr{
+	background-color: #1f252d;
+	color: #4083b8;
+}
+	.AppName{
+	color: #fefefe;
+}
+	.SysBg{
+	background-color: #292e32;
+}
+	.SysTitle{
+	color: #fefefe;
+}
+	.SysDes{
+	color: #abbdcf;
+}
+
+	.SysRight{
+	background-color: #1b1f24;
+	color: #96a3b5;
+}
+	.Context{
+	background-color: #292e32;
+}
+	.ContextPalt{
+	color: #abbdcf;
+}
+
+.ContextName{
+	color: #fefefe;
+}
+
+	.line{
+	background-color: #292e32;
+	}
+
+.shuoming{
+		color: #abbdcf;
+	}
+	
+	.MenuBtn {
+	background-image:url(../images/zkk1.png);
+}
+	.CloseBtn {
+	background-image:url(../images/close_black.png);
+}
+#fullscreen {
+    background:rgba(27,31,36,1.0);
+
+}
+.close {
+	background-image:url(../images/close.png);
+	}
+.menu_txt{
+    color: #fefefe;
+	background-color:#292e32;
+	}
+	.menu_txt_bottom{
+	color:#424b57;
+	}
+	
+	
+
+	
+}
+
+@media screen and (min-width: 600px) {
+	body{
+		max-width: 1000px;
+	}
+
+.fmall{
+	display: flex; 
+	flex-direction: row;
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+}
+
+.fmtwo{
+	display: flex; 
+	flex-direction: row;
+	border-radius: 10px;
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+	margin-bottom: 15px;
+}
+
+.fmimg{
+	display: block;
+}
+	
+.IndexNav{
+	display: flex;
+	flex-direction: row;
+}
+
+.IndexNavRow{
+	width: 380px;
+	margin-right: 10px;
+}
+	
+.AppRowNull{
+	width: 45%;
+	height: 72px;
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+	
+.AppRowAll{
+	display: flex;
+	flex-direction: row;
+	/*justify-content : space-around;*/
+}
+
+.AppRow{
+	width: 45%;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+	
+.SysAll{
+	display: flex;
+	flex-direction: row;
+	justify-content : space-between;
+}	
+
+	
+.SysBg{
+	width: 49%;
+	justify-content : space-between;
+}
+	
+#SysBg{
+	margin-top: 0px;
+}
+	
+	
+#AppRow{
+	width: 46.5%;
+}
+	
+.BgTg{
+	background-color: #fff;
+	border-radius: 10px;
+	width: 60%;
+	max-width: 60%;
+	height: auto;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding:0px;
+}
+	
+	
+}
+
