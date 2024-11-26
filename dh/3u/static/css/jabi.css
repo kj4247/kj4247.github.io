@@ -1,0 +1,842 @@
+
+
+#JaBiMenuColor {
+    background-color: #f6f6f6;
+}
+
+.jabifmall {
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.jabifmtwo {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+.jabifmimg {
+    display: block;
+    cursor: pointer;
+}
+
+.JabiTopMenu {
+    z-index: 9;
+    width: 100%;
+    max-width: 1000px;
+    height: 56px;
+    background-color: #f6f6f6;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.JabiTopMenuWhite {
+    z-index: 9;
+    width: 100%;
+    max-width: 1000px;
+    height: 56px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.JabiLogo {
+    z-index: 999;
+    align-self: center;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.logo_jabi {
+    margin-top: 6px;
+    margin-left: 22px;
+    margin-right: 0px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.00);
+    background-image: url(https://dh.ioswg.com/img/touch-icon-iphone.png);
+    border-radius: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 28px;
+}
+
+.JabiImg {
+    z-index: 999;
+    align-self: center;
+    display: block;
+    height: 28px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.JabiName {
+    z-index: 999;
+    align-self: center;
+    display: block;
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bolder;
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.JabiUrl {
+    align-self: center;
+    margin-right: 22px;
+    text-align: right;
+    width: 120px;
+    height: 28px;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: lighter;
+    color: #717171;
+}
+
+.JabiNone {
+    width: 1px;
+    height: 1px;
+    margin-top: 56px;
+}
+
+.JabiGg {
+    background-color: #fff;
+    height: auto;
+    margin: 10px 15px 0px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.JabiGgGrad {
+    background-color: #f6f6f6;
+    height: auto;
+    margin: 10px 15px 0px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.JabiGgTitle {
+    color: #3b3b3b;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.JabiGgNr {
+    color: #737373;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.JabiIndexNav {
+    height: auto;
+    padding: 10px 15px 0px;
+    display: block;
+}
+
+.JabiIndexNavRow {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.JabiIndexNone {
+    width: 20px;
+}
+
+.JabiIndexNavIn {
+    width: 100%;
+    height: 72px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 72px;
+    align-self: center;
+    display: block;
+    cursor: pointer;
+}
+
+.JabiIndexTitle {
+    margin: 40px 15px 10px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.JabiBg {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px 20px 20px;
+    width: auto;
+    height: auto;
+}
+
+.JabiBgTg {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+}
+
+.JabiAppWxr {
+    width: auto;
+    height: 40px;
+    background-color: #eef4ff;
+    color: #3583ff;
+    border-radius: 12px;
+    margin: 0px auto 0px;
+    padding: 0px 15px 0px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.JabiAppRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.JabiAppRowNull {
+    display: none;
+}
+
+.JabiApp {
+    margin-top: 25px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.JabiAppIcon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    background-size: contain;
+    border-radius: 16px;
+    border: none;
+    margin: auto;
+}
+
+.JabiAppName {
+    width: 70px;
+    max-width: 100%;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: lighter;
+    color: #565656;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.JabiSysBg {
+    margin: 0px 15px 1px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#JabiSysBg {
+    margin-top: 15px;
+}
+
+.JabiSysLeft {
+    height: 100px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.JabiSysIcon {
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    display: block;
+}
+
+.JabiSysTxt {
+    width: auto;
+    height: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.JabiSysTitle {
+    display: block;
+    color: #212121;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.JabiSysDes {
+    display: block;
+    color: #b8b8b8;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.JabiSysRight {
+    width: 100px;
+    height: 30px;
+    background-color: #eaeaea;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    margin-right: 15px;
+    color: #666666;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.JabiContext {
+    width: 20%;
+    flex-grow: 1px;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.JabiContextIcon {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.JabiContextPalt {
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+    color: #636363;
+    font-size: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.JabiContextName {
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    color: #212121;
+    font-size: 14px;
+    display: block;
+}
+
+.line {
+    width: 80px;
+    height: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dadada;
+    margin-top: 40px;
+}
+
+.shuoming {
+    text-align: center;
+    font-size: 12px;
+    color: #d8d8d8;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+
+
+/*.JabiMenuBtn {*/
+/*    display: block;*/
+/*    height: 56px;*/
+/*    width: 56px;*/
+/*    background-image: url(../img/menu_btn_black.png);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    background-position: center;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.JabiCloseBtn {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background-image: url(https://dh.ioswg.com/img/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#fullscreen {
+    background: #fff;
+    bottom: 0;
+    border-radius: 0px;
+    color: #000;
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+    z-index: -1;
+    max-width: 1000px;
+}
+
+.close {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background-image: url(https://dh.ioswg.com/img/close_black.png));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    height: 18px;
+    margin-top: 19px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: 18px;
+    z-index: 0;
+    background-image: url(https://dh.ioswg.com/img/close_black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: right;
+}
+
+.left {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.menu_txt {
+    color: #212121;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #f6f6f6;
+    line-height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    border-radius: 100px;
+    margin-bottom: 0px;
+}
+
+#menu_txt_top {
+    margin-top: 120px;
+}
+
+.menu_pic {
+    background-image: url(https://dh.ioswg.com/img/menu_pic.png);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.menu_txt_bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #717171;
+    margin-top: 10px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+#txt {
+    background: #fff;
+    bottom: 0;
+    border-radius: 0px;
+    color: #000;
+    display: block;
+    height: 240px;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 90%;
+    max-width: 360px;
+    margin-top: 20px;
+    z-index: -1;
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 650px rgba(0, 0, 0, 0.68);
+}
+
+.close_pic {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    height: 18px;
+    margin-top: 19px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: 18px;
+    z-index: -1;
+    background-image: url(https://dh.ioswg.com/img/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: right;
+}
+
+.txt_pic {
+    width: 100%;
+    background-color: #252525;
+    height: 58px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 20px;
+}
+
+.txt_ul {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+.txt_nr {
+    font-size: 16px;
+    line-height: 22px;
+    color: #97979a;
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#txt_left {
+    text-align: left;
+}
+
+#txt_btn {
+    display: block;
+    padding: 5px;
+    background-color: #FE5B5D;
+    color: #FFFFFF;
+    border-radius: 30px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cnzz {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    padding: 0px;
+}
+
+.JabiTg {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+    #JaBiMenuColor {
+        background-color: #1b1f24;
+    }
+
+    .JabiTopMenu {
+        background-color: #1b1f24;
+    }
+
+    .JabiTopMenuWhite {
+        background-color: #1b1f24;
+    }
+
+    .JabiName {
+        color: #fefefe;
+    }
+
+    .JabiUrl {
+        color: #424b57;
+    }
+
+    .JabiGg {
+        background-color: #292e32;
+
+    }
+
+    .JabiGgGrad {
+        background-color: #292e32;
+
+    }
+
+    .JabiGgTitle {
+        color: #fefefe;
+    }
+
+    .JabiGgNr {
+        color: #abbdcf;
+    }
+
+    .JabiIndexNavIn {
+        color: #fefefe;
+        background-color: #292e32;
+    }
+
+    .JabiIndexTitle {
+        color: #fefefe;
+    }
+
+    .JabiBg {
+        background-color: #292e32;
+    }
+
+    .JabiBgTg {
+        background-color: #292e32;
+    }
+
+    .JabiAppWxr {
+        background-color: #1f252d;
+        color: #4083b8;
+    }
+
+    .JabiAppName {
+        color: #abbdcf;
+    }
+
+    .JabiSysBg {
+        background-color: #292e32;
+    }
+
+    .JabiSysTitle {
+        color: #fefefe;
+    }
+
+    .JabiSysDes {
+        color: #abbdcf;
+    }
+
+    .JabiSysRight {
+        background-color: #1b1f24;
+        color: #96a3b5;
+    }
+
+    .JabiContext {
+        background-color: #292e32;
+    }
+
+    .JabiContextPalt {
+        color: #abbdcf;
+    }
+
+    .JabiContextName {
+        color: #fefefe;
+    }
+
+    .line {
+        background-color: #292e32;
+    }
+
+    .shuoming {
+        color: #abbdcf;
+    }
+
+    .JabiMenuBtn {
+        background-image: url(https://dh.ioswg.com/img/menu_btn.png);
+    }
+
+    .JabiCloseBtn {
+        background-image: url(https://dh.ioswg.com/img/close_black.png);
+    }
+
+    #fullscreen {
+        background: rgba(27, 31, 36, 1.0);
+
+    }
+
+    .close {
+        background-image: url(https://dh.ioswg.com/img/close.png);
+    }
+
+    .menu_txt {
+        color: #fefefe;
+        background-color: #292e32;
+    }
+
+    .menu_txt_bottom {
+        color: #424b57;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 1000px;
+    }
+
+    .jabifmall {
+        display: flex;
+        flex-direction: row;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+
+    .jabifmtwo {
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        margin-bottom: 15px;
+    }
+
+    .jabifmimg {
+        display: block;
+    }
+
+    .JabiIndexNav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .JabiIndexNavRow {
+        width: 380px;
+        margin-right: 10px;
+    }
+
+    .JabiAppRowNull {
+        width: 45%;
+        height: 72px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .JabiAppRowAll {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .JabiAppRow {
+        width: 45%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .JabiSysAll {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .JabiSysBg {
+        width: 49%;
+        justify-content: space-between;
+    }
+
+    #JabiSysBg {
+        margin-top: 0px;
+    }
+
+
+    #JabiAppRow {
+        width: 46.5%;
+    }
+
+    .JabiBgTg {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 60%;
+        max-width: 60%;
+        height: auto;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+
+}
