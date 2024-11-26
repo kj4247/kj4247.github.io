@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+.allnr {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gonggao {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.ggtile {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 900;
+    display: block;
+    margin-top: 0px;
+}
+
+.ggnr {
+    color: #616264;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 15px 0px 20px;
+    display: block;
+}
+
+.jiaocheng {
+    color: #3599ff;
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.gametit {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 900;
+    display: block;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.gamelie {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px 25px 10px 25px;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.gamename {
+    margin-left: 20px;
+    line-height: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+
+}
+
+.wechat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .gonggao {
+        background-color: #292e32;
+    }
+
+    .ggtile {
+        color: #fefefe;
+    }
+
+    .ggnr {
+        color: #abbdcf;
+    }
+
+    .gametit {
+        color: #fefefe;
+    }
+
+    .gamelie {
+        background-color: #292e32;
+    }
+
+    .gamename {
+        color: #fefefe;
+    }
+    .JabiUrl {
+        text-decoration: none;
+    }
+}
