@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+    <!--网站屏蔽PC端访问JS代码 网站只允许手机端访问
+<script type="text/javascript">
+if(window.screen.width==0){window.location.replace("xxx")};
+var system={win:false,mac:false,xll:false};
+var p = navigator.platform;
+system.win=p.indexOf("Win")==0;
+system.mac=p.indexOf("Mac")==0;
+system.x11=(p=="X11") || (p.indexOf("Linux")==0);
+if(system.win||system.mac||system.xll) {
+location.replace("/pc");
+}
+</script>
+<!--网站屏蔽PC端访问JS代码 网站只允许手机端访问-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>宅哥技术｜应用下载、扫码登录游戏、快捷指令、系统尝鲜、微信提示音</title>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/clipboard.min.js"></script>
+<!--<script>
+function Jabijj(){
+        if(!(/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
+            alert("如需获取相关的快捷指令规则，请在手机端打开本网页！");
+        }else{
+          window.location.href = '/jj';
+        }
+}
+</script>-->
+<script type="text/javascript">
+         window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 //屏蔽F12
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                  //屏蔽Ctrl+Shift+I
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                     //屏蔽Shift+F10
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                 }
+             };
+             //屏蔽右键单击
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+         }
+    </script>
+    
+<link rel="apple-touch-icon" href="static/picture/touch-icon-iphone.png">
+<link rel="stylesheet" type="text/css" href="static/css/zhaige.css">
+
+
+
+
+<style>
+	body{
+		background-color: #f6f6f6;
+		padding: 0;
+		margin: auto;
+		width: 100%;
+		font-family: PingFangSC-Light, sans-serif;
+	}
+	
+	.sjtj{
+	width:0px;
+	height:0px;
+	display:block;
+	font-size:0px;}
+	
+	@media (prefers-color-scheme: dark) {
+    body{
+		background-color: #1b1f24;
+	}
+}
+	
+</style>
+<script>
+	var _czc = _czc || [];
+</script>
+	
+</head>
+
+<body onload="Bom()">
+
+<div id="container" style="display: none">
+ <img src="static/picture/opento.png" style="width: 100%; height: auto;display: block">
+</div>
+	
+<div id="container_all" style="display: none">
+	<div class="JabiTopMenu">
+		<div class="JabiLogo">
+			<img class="JabiImg" src="static/picture/touch-icon-iphone.png">
+			<a class="JabiName">宅哥技术</a>
+		</div>
+		<a class="JabiUrl">pgbug.com</a>
+	</div>
+	
+	<div class="JabiNone"></div>
+	
+	<div class="JabiGg">
+		<a class="JabiGgTitle">公告：</a><a class="JabiGgNr">更多好玩，关注公众号「宅哥技术」</a>
+	</div>
+	<!--网站屏蔽PC端访问JS代码 网站只允许手机端访问	-->
+	<div class="JabiBgTg" style="padding: 0px;">
+		<img class="JabiTg" src="static/picture/27.272_42770.png" onclick="window.open('https://shop1259795955.v.weidian.com/?userid=1259795955&wfr=retailer&spider_token=ac42');_hmt.push(['_trackEvent', '主页', '推广', '2023年12月28日'])">
+	</div>
+</div>
+         <div class="JabiBgTg" style="padding: 0px;">
+		<div><video id="myVideo" style="width: 99%;border-radius: 10px;"  controls autoplay loop>
+							<source src="img/video.mp4" type="video/mp4">
+						</video><b> </div>
+				</style>	
+						</div>
+</div>
+	
+		<div class="JabiIndexTitle">站长推荐</div>
+	<div class="JabiSysAll">
+	
+	<div class="JabiAppRow" id="JabiAppRow" style="padding: 0px 15px 0px;">
+		<div class="JabiContext" onclick="window.open('http://wm.zgios.cn/');_hmt.push(['_trackEvent', '主页', '其它平台', '公众号'])">
+			<img class="JabiContextIcon" src="static/picture/32.028_30054.png">
+			<a class="JabiContextPalt">美团&饿了么</a>
+			<a class="JabiContextName">外卖红包</a>
+		</div>
+		<div class="JabiContext" onclick="window.open('http://wm.312752.cn/zhifubaohb.php');_hmt.push(['_trackEvent', '主页', '其它平台', '微博'])">
+			<img class="JabiContextIcon" src="static/picture/34.879_73820.png">
+			<a class="JabiContextPalt">支付宝</a>
+			<a class="JabiContextName">支付红包</a>
+		</div>
+		<div class="JabiContext" data-clipboard-action="copy" data-clipboard-text="宅哥软件园" onclick="window.open('https://dz.312752.cn/');_hmt.push(['_trackEvent', '主页', '其它平台', '小程序'])">
+			<img class="JabiContextIcon" src="static/picture/31.003_62397.jpeg">
+			<a class="JabiContextPalt">全站定制</a>
+			<a class="JabiContextName">UDID定制</a>
+		</div>
+	</div>
+	
+	<div class="JabiAppRow" id="JabiAppRow" style="padding: 0px 15px 0px;">
+		<div class="JabiContext" onclick="window.open('https://dz.zgios.cn/fss/');_hmt.push(['_trackEvent', '微信分身', '应用分身', '正版分身'])">
+			<img class="JabiContextIcon" src="static/picture/28.548_26248.png">
+			<a class="JabiContextPalt">正版分身</a>
+			<a class="JabiContextName">应用分身</a>
+		</div>
+		
+		<div class="JabiContext" onclick="window.open('http://xyinmw.ddkuaidobanchq6hb.cn/3401331');_hmt.push(['_trackEvent', '主页', '其它平台', '抖音'])">
+			<img class="JabiContextIcon" src="static/picture/08.431_38680.jpeg">
+			<a class="JabiContextPalt">试玩赚钱</a>
+			<a class="JabiContextName">赏帮赚</a>
+		</div>
+		<div class="JabiContext" onclick="window.open('https://fqm001.com/aurora?u=11337259&referer_code=bc87e230cd&v=20231103');_hmt.push(['_trackEvent', '主页', '其它平台', '知乎'])">
+			<img class="JabiContextIcon" src="static/picture/11.776_95050.jpeg">
+			<a class="JabiContextPalt">试玩赚钱</a>
+			<a class="JabiContextName">试玩星</a>
+		</div>
+		<!--<div class="JabiContext" onclick="window.open('https://author.baidu.com/home?context=%7B%22app_id%22%3A1649284984045909%7D&wfr=bjh');_hmt.push(['_trackEvent', '主页', '其它平台', '百家号'])">
+			<img class="JabiContextIcon" src="http://jabizb.com/index/about_baijiahao.png">
+			<a class="JabiContextPalt">百家号</a>
+			<a class="JabiContextName">宅哥技术</a>
+		</div>-->
+	</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+<div class="JabiBgTg" style="padding: 0px;">
+		<img class="JabiTg" src="static/picture/32.362_89984.png" onclick="window.open('https://simhaoka.com/phone/index?id=0814D0818EB4B6DFAF4CC0E60A7BDB24');_hmt.push(['_trackEvent', '主页', '推广', '流量卡'])">
+	</div>
+	<div class="JabiIndexTitle">应用下载</div>
+	
+	<div class="JabiBg">
+		<div class="JabiAppWxr" onclick="location.href='/qingsong';_hmt.push(['_trackEvent', '主页', '跳转', '未信任教程'])">证书无效，定制安装更稳定「点击了解」</div>
+		
+		
+		<div class="JabiAppRowAll">
+			<div class="JabiAppRow">
+			<!--<div class="JabiApp" onclick="location.href='https://at.umtrack.com/5rieKj';_hmt.push(['_trackEvent', '主页', '应用', '袋鼠下载'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(http://jabizb.com/dl/icon_dsxz.png);" src="static/image/none.png"/>
+				<a class="JabiAppName">袋鼠下载</a>
+			</div>
+			-->
+			<div class="JabiApp" onclick="location.href='http://dy.312752.cn/qingsong/';_hmt.push(['_trackEvent', '主页', '应用', '微信自签版'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/18.944_98971.png);" src="static/picture/none.png">
+				<a class="JabiAppName">轻松签（企业）</a>
+			</div>
+			
+			<div class="JabiApp" onclick="location.href='https://simhaoka.com/phone/index?id=0814D0818EB4B6DFAF4CC0E60A7BDB24';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/13.205_63439.png);" src="static/picture/none.png">
+				<a class="JabiAppName">流量卡(0元领)</a>
+			</div>
+				<div class="JabiApp" onclick="location.href='http://sm.zgios.top/ksdjfoiere_ksjrhej.php';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(https://app.pgbug.com/mulu/sscc/IMG_3605(20230906-143032).PG);" src="https://app.pgbug.com/mulu/sscc/IMG_35(20230906-143032).PNG">
+				<a class="JabiAppName">VIP_</a>
+			</div>
+				
+				<div class="JabiApp" onclick="location.href='https://notecdn.yiban.io/cloud_res/270927927/imgs/23-4-9_11:12:36.685_5487.png';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/31.718_55053.png);" src="static/picture/none.png">
+				<a class="JabiAppName">运动助理(小程序)</a>
+			</div>
+			
+		<div class="JabiApp" onclick="location.href='https://pan.zgios.cn/%E5%B7%A8%E9%AD%94ipa';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/51.055_74439.jpeg);" src="static/picture/none.png">
+				<a class="JabiAppName">Trollstore(IPA分享)</a>
+			</div>
+							<div class="JabiApp" onclick="location.href='/gongxiang';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/29.159_29707.png);" src="static/picture/none.png">
+				<a class="JabiAppName">账号共享(可下小火箭)</a>
+			</div>
+	
+							<div class="JabiApp" onclick="location.href='/game';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/20.008_61498.png);" src="static/picture/none.png">
+				<a class="JabiAppName">扫码登录(代练必备)</a>
+			</div>
+			
+		
+			
+										<div class="JabiApp" onclick="location.href='http://wm.zgios.cn/';_hmt.push(['_trackEvent', '主页', '应用', '迅雷'])">
+				<img class="JabiAppIcon" style="
+	background-image: url(static/image/57.932_49315.png);" src="static/picture/none.png">
+				<a class="JabiAppName">外卖红包(每天领)</a>
+			</div>
+			
+			
+		</div>
+		
+		</div>		
+		
+	</div>
+	
+	
+	<div class="JabiIndexNav">
+		<div class="JabiIndexNavRow">
+			<div class="JabiIndexNavIn" onclick="location.href='/mulu';_hmt.push(['_trackEvent', '主页', '跳转', '资源下载'])">iOS应用</div>
+			<div class="JabiIndexNone"></div>
+			<div class="JabiIndexNavIn" onclick="location.href='https://pan.xunlei.com/s/VNs6ik5T-kzYKKW6Vhs-R4qWA1?pwd=wcs3';_hmt.push(['_trackEvent', '主页', '跳转', '快捷指令'])">安卓应用</div>
+		</div>
+			
+			
+						<div class="JabiIndexNavRow">
+			<div class="JabiIndexNavIn" onclick="location.href='/yueyu';_hmt.push(['_trackEvent', '主页', '跳转', '微信提示音'])">iOS越狱工具</div>
+				<div class="JabiIndexNone"></div>
+			<div class="JabiIndexNavIn" onclick="location.href='/qingsong';_hmt.push(['_trackEvent', '主页', '跳转', '微信提示音'])">全站应用定制</div>
+		</div>
+		
+		<div class="JabiIndexNavRow">
+			<div class="JabiIndexNavIn" onclick="location.href='esign://addsource?url=http://p12.312752.cn/appstore';_hmt.push(['_trackEvent', '主页', '跳转', '扫码登录'])">宅哥轻松签源</div>
+			<div class="JabiIndexNone"></div>
+			<div class="JabiIndexNavIn" onclick="location.href='nsk-sign://addsource?url=http://p12.312752.cn/appstore';_hmt.push(['_trackEvent', '主页', '跳转', '微信提示音'])">宅哥全能签源</div>
+	</div>
+
+		
+	</div>
+	
+	
+
+	<div class="JabiIndexTitle">系统相关</div>
+	
+	<div class="JabiSysAll">
+	
+	<div class="JabiSysBg" style="border-radius: 10px;">
+		<div class="JabiSysLeft">
+			<img class="JabiSysIcon" src="static/picture/15.384_24565.png">
+			<div class="JabiSysTxt">
+				<a class="JabiSysTitle">iOS/iPadOS 17Beta</a>
+				<a class="JabiSysDes">开发者测试版</a>
+			</div>
+		</div>
+		<div class="JabiSysRight" onclick="location.href='http://xinsu.pgbug.com/app/beta/ios17.mobileconfig';_hmt.push(['_trackEvent', '主页', '系统', 'iOS16'])">立即尝鲜</div>
+	</div>
+		
+	<div class="JabiSysBg" id="JabiSysBg" style="border-radius: 10px;">
+		<div class="JabiSysLeft">
+			<img class="JabiSysIcon" src="static/picture/watch.jpg">
+			<div class="JabiSysTxt">
+				<a class="JabiSysTitle">WatchOS 9.6 Beta2</a>
+				<a class="JabiSysDes">开发者测试版</a>
+			</div>
+		</div>
+		<div class="JabiSysRight" onclick="location.href='http://xinsu.pgbug.com/app/beta/watchOS_9_Beta_Profile.mobileconfig';_hmt.push(['_trackEvent', '主页', '系统', 'watchos9'])">立即尝鲜</div>
+	</div>
+		
+	</div>
+	
+		
+	<div class="JabiSysAll" style="margin-top: 10px">
+		
+	<div class="JabiSysBg" id="JabiSysBg" style="border-radius: 10px;">
+		<div class="JabiSysLeft">
+			<img class="JabiSysIcon" src="static/picture/icon7.png">
+			<div class="JabiSysTxt">
+				<a class="JabiSysTitle">屏蔽系统 OTA 升级</a>
+				<a class="JabiSysDes">支持 iOS12-iOS16（2023.01.31更新）</a>
+			</div>
+		</div>
+		<div class="JabiSysRight" onclick="location.href='http://xinsu.pgbug.com/app/beta/tvOS.mobileconfig';_hmt.push(['_trackEvent', '主页', '系统', '屏蔽更新'])">点击安装</div>
+	</div>
+		
+
+		
+	</div>
+	
+	<!--<div class="JabiBgTg" style="padding: 0px;">
+		<img class="JabiTg" src="http://jabizb.com/index/tg_eleme.jpg" onclick="window.open('http://jabizb.com/index/eleme.jpg');_hmt.push(['_trackEvent', '主页', '推广', '饿了么'])">
+	</div>
+	
+	<div class="JabiBgTg" style="padding: 0px;">
+		<img class="JabiTg" src="http://jabizb.com/img/zfbhb.jpg" onclick="window.open('http://jabizb.com/img/zfbhbewm.jpg');_hmt.push(['_trackEvent', '主页', '推广', '支付宝红包'])">
+	</div>-->
+	
+	
+		
+	
+	<div class="JabiIndexTitle">找到我们</div>
+	
+	<script>
+		
+		function copyToClip(content) {
+  			
+ 　　		alert('打开微信搜索公众号：宅哥技术')
+      
+        }
+		
+		function copyToClipmini(content) {
+  			
+ 　　		alert('打开设置-通用-VPN与设备管理-里面信任即可')
+      
+        }
+        
+        function copykuaijiezhil(content) {
+  			
+ 　　		alert('手机设置-隐私-下拉最底下-开启开发者模式')
+      
+        }
+			
+	</script>
+	
+	<div class="JabiSysAll">
+	
+	<div class="JabiAppRow" id="JabiAppRow" style="padding: 0px 15px 0px;">
+		<div class="JabiContext" onclick="copyToClip('宅哥技术');_hmt.push(['_trackEvent', '主页', '其它平台', '公众号'])">
+			<img class="JabiContextIcon" src="static/picture/about_wechat.png">
+			<a class="JabiContextPalt">微信公众号</a>
+			<a class="JabiContextName">宅哥技术</a>
+		</div>
+			<div class="JabiContext" onclick="window.open('https://v.douyin.com/iejdj9xD/');_hmt.push(['_trackEvent', '主页', '其它平台', '抖音'])">
+			<img class="JabiContextIcon" src="static/picture/about_tiktok.png">
+			<a class="JabiContextPalt">抖音号</a>
+			<a class="JabiContextName">宅哥技术</a>
+		</div>
+		<div class="JabiContext" onclick="window.open('https://weibo.com/u/6121871386');_hmt.push(['_trackEvent', '主页', '其它平台', '抖音'])">
+			<img class="JabiContextIcon" src="static/picture/about_weibo.png">
+			<a class="JabiContextPalt">微博</a>
+			<a class="JabiContextName">宅哥技术</a>
+		</div>
+	</div>
+	
+	<div class="JabiAppRow" id="JabiAppRow" style="padding: 0px 15px 0px;">
+	
+		
+	
+	
+		<!--<div class="JabiContext" onclick="window.open('https://author.baidu.com/home?context=%7B%22app_id%22%3A1649284984045909%7D&wfr=bjh');_hmt.push(['_trackEvent', '主页', '其它平台', '百家号'])">
+			<img class="JabiContextIcon" src="http://jabizb.com/index/about_baijiahao.png">
+			<a class="JabiContextPalt">百家号</a>
+			<a class="JabiContextName">宅哥技术</a>
+		</div>-->
+	</div>
+		
+	</div>
+	
+
+	
+	<div class="line"></div>
+		
+	<a class="shuoming" id="JabiSm"></a>
+	
+	
+
+</div>
+<script>
+  /*
+   * 智能手机浏览器版本信息:
+   */
+  var browser = {
+    versions: function () {
+      var u = navigator.userAgent, app = navigator.appVersion;
+      return {//移动终端浏览器版本信息
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+        iPad: u.indexOf('iPad') > -1, //是否iPad
+        webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+        wx: u.indexOf("MicroMessenger") > 0 //是否是微信
+      };
+    }(),
+    language: (navigator.browserLanguage || navigator.language).toLowerCase()
+  },con=document.getElementById("container");
+    if (browser.versions.wx) {
+      container.style.cssText="display:block";
+	  container_all.style.cssText="display:none";
+      // window.location.href= 'http://c.pc.qq.com/middle.html?pfurl=https://www.baidu.com/appdown/index.html';
+    } else{
+      // 此处写Andoird 的下载地址
+      container_all.style.cssText="display:block";
+    }
+</script>
+</body>
+</html>

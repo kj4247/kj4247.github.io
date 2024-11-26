@@ -1,0 +1,257 @@
+<!doctype html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<meta name="description" content="查询UDID">
+<meta name="author" content="老六科技"> 
+<meta name="keywords" content="udid,查询udid,UDID获取,蒲公英,蒲公英udid">
+
+<title>获取 UDID</title>
+<style type="text/css">@media print{
+BODY {display:none}
+}
+  
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Arial;
+	border:0px;
+	z-index:1;
+	background-color: #E2E4F0;
+	display: grid;
+	place-items: center;
+	}	
+
+.All{
+	width: 100%;
+	height: 100%;
+	display: block;
+	max-width: 800px;
+	margin-top:15px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	
+.AllText{
+	width: 80%;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding:20px;
+	}
+
+.Info{
+	font-size: 15px;
+	color: #757575;
+	font-weight:bold;
+	line-height: 30px;
+	display: block;
+	margin-top: 5px;
+	}
+
+
+.Udid{
+	text-decoration:none;
+	color:#000;
+	margin-left:auto;
+	margin-right:auto;
+	
+    width: 90%;
+    height: 60px;
+    background-color: #7CD8B9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #adadad, -5px -5px 10px #FFFFFF;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;	
+	}
+	.udid:hover{
+	  cursor: pointer;
+	  box-shadow:0 0 0 rgba(0, 0, 0, 0.2),
+	  0 0 0 rgba(255, 255, 255, 0.8),
+	  inset 5px 5px 8px rgba(0, 0, 0, 0.1),
+	  inset -5px -5px 8px rgba(255, 255, 255, 1);
+	}
+	
+	
+.Top{
+    font-weight:bold;
+    color: #757575;
+    background: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 20%;
+    display: block;
+    }
+    
+.img{
+    margin-top: 10px;
+    width: 100%;
+          height: 100%;
+          background-color: #E2E4F0;
+          border-radius: 10px;
+          box-shadow:inse 5px 5px 9px #adadad,
+          inse -5px -5px 13px #FFFFFF;
+          padding: 18px;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+.video{
+    margin-top: 10px;
+    width: 80%;
+          height: 80%;
+     background-color: #E2E4F0;
+          border-radius: 10px;
+          box-shadow:inset 5px 5px 9px #adadad,
+          inset -5px -5px 13px #FFFFFF;
+          padding: 18px;
+          text-align: center;
+          margin-bottom: 20px;
+    
+}
+     .Videoimg {
+        width: 100%;
+        height: 100%;
+      }	
+.text{
+    width: 80%;
+    height：5px;
+    margin-top: 20px;
+    background-color: #E2E4F0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #adadad,  -5px -5px 13px #FFFFFF;
+    padding: 20px;
+    text-align:center;
+    margin-bottom: 30px;	  
+
+	  flex-direction:none;
+	  color: #c48A90;
+    align-items: center;
+    font-weight: bold;
+	}    
+  .text:hover {
+  	cursor: pointer;
+  	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),
+  	    0 0 0 rgba(255, 255, 255, 0.8),
+  	inset 5px 5px 8px rgba(0, 0, 0, 0.1),
+  	inset -5px -5px 8px rgba(255, 255, 255, 1);
+  	}
+
+.t1{
+    color: #757575;
+    font-weight:bold;
+    float: left;
+    margin-left: -3%;
+    font-size: 16px;
+    line-height: 10px;
+    display: block;
+    margin-top: 40px;
+    
+}
+
+.t2{
+    color: #757575;
+    float: left;
+    margin-left: 10%;
+    font-size: 14px;
+    line-height: 10px;
+    display: block;
+    line-height: 25px;
+    width: 90%;
+    text-align:left;
+    margin-top: -5px;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false">
+  <center>
+  <img class="img" src="https://pan.scll.cc/d/imgs/img/udid.PNG" style="width:300px;height:200px;">
+    </center><!--图标-->
+<a class="Udid" onclick="getudid()">点击获取UDID</a><!--获取udid-->
+
+
+
+<!-- 视频容器 -->
+<div class="video">
+  <video class="Videoimg" width="300" height="180" controls="" poster="https://pan.scll.cc/d/img/xcx/IMG_0528.PNG">
+    <source src="https://pan.scll.cc/d/imgs/video/udid.mov" type="video/mp4">
+    <!-- 替换为你的视频URL -->
+    您的浏览器不支持视频标签。
+
+  </video>
+</div>
+
+
+<div class="text">
+  <details>
+  <summary class="tm">查看文字描述</summary>
+  <p>
+    
+  <p class="t1">系统提示输入密码? </p>  <br>
+  <p class="t2">     
+    如果您安装描述文件系统提示输入密码，请输入锁屏密码。  <br>
+   </p>  <br>
+    
+  <p class="t1">什么是UDID? </p><br>
+  <p class="t2">  
+    UDID，是iOS设备的一个唯一识别码，每台iOS设备都有一个独一无二的编码，这个编码，我们称之为识别码，也叫做UDID（ Unique Device Identifier）。<br>
+  </p>    
+  
+  </details>
+</div>
+
+
+ 
+
+<!-- 版权信息开始 -->
+<style type="text/css">
+  .copyright {
+    text-align:center;
+    position:;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(0%);
+    color: #ffffff;
+    font-size: 12px;
+    width:300px;
+    
+  }
+</style>
+<div class="copyright"><span class="source-name"> <a href="wx.html" class="am-btn am-btn-primary am-btn-xs am-round"><font color="black">同款网站搭建</font></a>
+  <br>老六科技 © 版权所有 渝ICP备2022013182号-2
+</span></div>
+<!-- 版权信息结束 -->
+<!--自动跳转设置开始-->
+<script>
+function getudid() {
+    var userAgent = navigator.userAgent;
+    var iOSVersion = parseFloat((userAgent.match(/OS (\d+)_(\d+)_?(\d+)?/) || [])[1]);
+    if (iOSVersion < 17.0) {
+        window.location.href = 'udid.mobileconfig'; // 实际获取udid描述文件
+        setTimeout(function() {
+            window.location.href = 'TZ.mobileprovision'; // 跳转系统设置描述文件
+        }, 1500); // 1500代表时间
+    } else {
+        window.location.href = 'udid.mobileconfig'; // 实际获取udid描述文件
+        alert('当前设备系统版本为17.0及以上，请前往iPhone设置安装描述文件以获取UDID');
+    }
+}
+
+</script>
+
+</body>
+</html>
