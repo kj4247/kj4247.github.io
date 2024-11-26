@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>     
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="https://aiwanmao.cn/gywm/favicon.ico">     
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" type="image/png" href="https://yhios.cn/home/yqlj/image/icon.png">
+		<link rel="apple-touch-icon" href="https://yhios.cn/home/yqlj/image/icon.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://yhios.cn/home/yqlj/image/icon.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://yhios.cn/home/yqlj/image/icon.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://yhios.cn/home/yqlj/image/icon.png">
+		<meta name="keywords" content="艾峰科技，全能签，轻松签，软件源，全能签软件源，艾峰科技，艾峰助手软件源，艾峰科技软件源">
+	<meta name="description" content="艾峰软件源,艾峰科技，全能签，轻松签，软件源，全能签软件源">
+<title>艾峰科技</title>
+<html lang="en">
+<link rel="icon" type="image/png" href="https://yhios.cn/home/image/icon.png">
+<script src="static/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="static/css/cat.css">
+<link href="https://aiwanmao.cn/gywm/css/tab.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style1.css">
+
+<!--公告-->
+	<div class="None-2">
+	<div class="Gg">
+	<a class="GgTitle">互换友情链接请联系<a href="index2.html">客服</a>
+	</div>
+<!--公告结束	-->
+
+<!--导航栏-->
+	<div class="TopMenu">
+		<div class="Logo" onclick="location.href='https://afzs.yhios.cn'">
+			<img class="Img" src="static/picture/logocat.png">
+			<a class="catName">爱锋科技</a>
+		</div>
+		<div class="MenuBtn"></div>
+	</div>
+	
+	<div id="fullscreen">
+		<div class="TopMenuWhite">
+			<div class="Logo" onclick="location.href='https://afzs.yhios.cn'">
+				<img class="Img" src="static/picture/logocat.png">
+				<a class="catName">艾峰科技</a>
+			</div>
+			<div class="CloseBtn"></div>
+		</div>
+		<div class="left">
+			<a class="menu_txt" id="menu_txt_top" href="index1.html">本站主页</a>
+			<a class="menu_txt" href="index2.html">关注公众号</a>
+			<a class="menu_txt" href="index5.html">资源网盘</a>
+			<a class="menu_txt" href="index6.html">爱锋软件源</a>
+		</div>
+        <div class="menu_pic"></div>
+		<a class="menu_txt_bottom">YHiOS.CN</a>
+		
+		
+		<script>
+    $("div.MenuBtn").click(function() {
+	$("#fullscreen").css("opacity", "1");
+	$("#fullscreen").css("z-index", "10");
+	$("#fullscreen").css("display", "block");
+});
+
+	$("div.CloseBtn").click(function() {
+    $("#fullscreen").css("opacity", "0.5");
+    $("#fullscreen").css("z-index", "-1");
+	$("#fullscreen").css("display", "none");
+});
+
+	$("a.menu_txt").click(function() {
+    $("#fullscreen").css("opacity", "0");
+    $("#fullscreen").css("z-index", "-1");
+	$("#fullscreen").css("display", "none");
+});
+	</script>
+	</div>
+<!--导航栏结束-->	
+<style type="text/css">body{
+		background-color: #f6f6f6;
+		padding: 0;
+		margin: auto;
+		width: 100%;
+		font-family: PingFangSC-Light, sans-serif;
+	}
+    .back {
+            background-color: #000000;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 50px;
+            line-height: 50px;
+            width: auto;
+            display: block;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }		
+	.uiall{
+		display: -webkit-flex; /* Safari */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+		width: 300px;
+		margin: auto;
+	}
+	
+       .choice{
+		width: 110px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+        font-size: 18px;
+		color: #fff;
+		font-weight: 900;
+		display: block;
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		background-color: #000;
+		border-radius: 30px;
+       }
+	
+	.nochoice{
+		width: 110px;
+		text-align: center;
+        font-size: 14px;
+		color: #3D3D3D;
+		font-weight: bold;
+		display: block;
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+       }
+	
+       .tab-item{
+           display: none;
+       }
+       .show{
+           display: block;
+       }
+	
+	.AD{
+	width:0px;
+	height:0px;
+	display:block;
+	font-size:0px;}
+	
+	@media (prefers-color-scheme: dark) {
+    body{
+		background-color: #1b1f24;
+	}
+	
+	 .choice{
+		color: #000;
+		background-color: #fff;
+       }
+	
+	.nochoice{
+		color: #A7A7A7;
+       }
+
+}
+</style>
+
+
+		<div class="IndexTitle">
+			友情链接
+		</div>
+		<div class="SysAll">
+			<div class="AppRow" id="AppRow" style="padding: 0px 15px 0px;">
+				<div class="Context" onclick="window.open('https://www.qlam.cc')">
+					<img class="ContextIcon" src="static/picture/qydh.png">
+					<a class="ContextPalt">
+						点击前往
+					</a>
+					<a class="ContextName">
+						清烟资源库
+					</a>
+				</div>
+				<div class="Context" onclick="window.open('https://m.ioswg.com')">
+					<img class="ContextIcon" src="static/picture/20231230050655767.png">
+					<a class="ContextPalt">
+						点击前往
+					</a>
+					<a class="ContextName">
+						软件源大全
+					</a>
+				</div>
+				<div class="Context" onclick="window.open('../gzh/index.html')">
+					<img class="ContextIcon" src="static/picture/logocat.png">
+					<a class="ContextPalt">
+						申请收录
+					</a>
+					<a class="ContextName">
+						等待申请
+					</a>
+				</div>
+			</div>
+			<!--div class="AppRow" id="AppRow" style="padding: 0px 15px 0px;">
+				<div class="Context" onclick="window.open('https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral')">
+					<img class="ContextIcon" src="../image/logo3.png">
+					<a class="ContextPalt">
+						提供cdn加速
+					</a>
+					<a class="ContextName">
+						又拍云
+					</a>
+				</div>
+				<div class="Context" onclick="window.open('https://yun.luolis.cn')">
+					<img class="ContextIcon" src="https://aiwancat.oss-cn-chengdu.aliyuncs.com/img/uugai.com_1647225454527.png">
+					<a class="ContextPalt">
+						便宜主机
+					</a>
+					<a class="ContextName">
+						萝莉云
+					</a>
+				</div-->
+				
+			</div>
+		</div>
+		
+
+			
+
+</html></head></html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <!--引入字体，全局字体使用-->
+<link rel="stylesheet" href="static/css/lxgwwenkai-regular.css">
+
+<!---背景图--->
+<link rel="stylesheet" href="https://file.imsyy.top/resource/Alist/alist-custom-imsyy.css">
+
+<style>
+.footer span,.footer a:nth-of-type(2){
+  display:none;
+}
+/*readme白天模式透明*/
+.hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+    background-color: rgba(255, 255, 255, 0.1)!important;
+}
+/*readme夜间模式透明*/
+.hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color:rgb(0 0 0 / 10%)!important;
+}
+/*主列表白天模式透明*/
+.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+}
+/*主列表夜间模式透明*/
+ .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color:rgb(0 0 0 / 50%)!important;
+}
+/*赞赏列表*/
+.marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: transparent; /* 设置背景透明 */
+            padding: 10px;
+        }
+
+        .marquee-content {
+            display: block;
+            animation: scroll 10s linear infinite;
+        }
+
+        .marquee-item {
+            padding: 5px;
+            border-bottom: none;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+.toubu {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto; /* 横向滚动 */
+  padding: 5px 0; /* 调整顶部和底部内边距 */
+  width: 100%; /* 设置容器宽度 */
+}
+
+.scroll-container {
+  display: flex;
+  gap: 5px; /* 调整链接之间的间距 */
+}
+
+.scroll-container a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  color: #3a3a3a;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+  padding: 5px 3px; /* 调整链接的内边距 */
+}
+
+.scroll-container a::after {
+  content: "｜"; /* 添加分隔符 */
+  margin-left: 2px; /* 调整分隔符与链接之间的距离 */
+}
+
+.scroll-container a:last-child::after {
+  content: ""; /* 最后一个链接后不显示分隔符 */
+}
+
+.scroll-hint {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px; /* 调整滑动提示与链接之间的距离 */
+  position: sticky; /* 使其固定在顶部 */
+  top: 0; /* 使其固定在顶部 */
+}
+
+ /* 自定义弹窗样式 */
+.custom-swal .swal2-popup {
+        padding: 20px; /* 修改弹窗的内边距 */
+    }
+.custom-swal .swal2-title {
+        margin-top: 0; /* 减少标题上方的间距 */
+    }
+.custom-swal .swal2-content {
+        margin-top: 10px; /* 减少内容上方的间距 */
+    }
+ /* Center align buttons in SweetAlert dialog */
+    .swal-footer {
+        text-align: center;
+    }
+    
+    /* Add your custom button styles here */
+    .custom-swal-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    /* Style for the "确认密码" button */
+    .swal-button--confirm {
+        background-color: green; /* Change to your desired color */
+        color: white; /* Text color */
+    }
+    
+    /* Style for the "在线客服" button */
+    .swal-button--joinQQ {
+        background-color: red; /* Change to your desired color */
+        color: white; /* Text color */
+    }
+    
+    /* Style for the "在线客服" button */
+    .swal-button--joinQQ {
+        background-color: red; /* Change to your desired color */
+        color: white; /* Text color */
+    }
+    
+    /* Prevent double-tap zooming */
+    body {
+        touch-action: manipulation;
+    }
+    
+    /* Disable scrolling */
+    .no-scroll {
+        overflow: hidden;
+    }
+</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta name="generator" content="AList V3">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="AList">
+    <link rel="apple-touch-icon" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png">
+    <script src="static/js/aliyun-web-office-sdk.min.js" async=""></script>
+    <link rel="shortcut icon" type="image/ico" href="https://i.imgs.ovh/2023/09/20/iGm3.png">
+    <title>艾峰网盘</title>
+    <script>
+      window.ALIST = {
+        cdn: '',
+        monaco_cdn: undefined,
+        base_path: '/',
+        api: undefined,
+        main_color: '#1890ff',
+      }
+      window.__dynamic_base__ = window.ALIST.cdn || ""
+    </script>
+    
+    
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+    <script>
+(function(){
+var preloads = [{"parentTagName":"head","tagName":"link","attrs":{"href":"/static/manifest.json","rel":"manifest"}},{"parentTagName":"head","tagName":"script","attrs":{"type":"module","crossorigin":"","src":"/assets/index.75e31196.js"}},{"parentTagName":"head","tagName":"link","attrs":{"rel":"stylesheet","href":"/assets/index.15d8d646.css"}}];
+function setAttribute(target, attrs) {
+for (var key in attrs) {
+  target.setAttribute(key, attrs[key]);
+}
+return target;
+};
+for(var i = 0; i < preloads.length; i++){
+var item = preloads[i]
+var childNode = document.createElement(item.tagName);
+setAttribute(childNode, item.attrs)
+if( window.__dynamic_base__) {
+  if(item.tagName == 'link') {
+    setAttribute(childNode, { href:  window.__dynamic_base__ + item.attrs.href })
+  } else if (item.tagName == 'script') {
+    setAttribute(childNode, { src:  window.__dynamic_base__ + item.attrs.src })
+  }
+}
+document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
+}
+})();
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    
+    
+<!-- 网页鼠标点击特效 - 核心价值观关键字 -->
+<script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤",
+                "❤敬业❤", "❤诚信❤", "❤友善❤");
+            var heart = document.createElement("b"); //创建b元素
+            heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+
+            document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+            var f = 13, // 字体大小
+                x = event.clientX - f / 2 - 30, // 横坐标
+                y = event.clientY - f, // 纵坐标
+                c = randomColor(), // 随机颜色
+                a = 1, // 透明度
+                s = 0.8; // 放大缩小
+
+            var timer = setInterval(function () { //添加定时器
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+        }
+        // 随机颜色
+        function randomColor() {
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                .random() * 255)) + ")";
+        }
+    }());
+</script>
+<!--开站时间开始-->       
+<center>
+        <br>
+  
+            <span class="nav-item">
+             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        var grt= new Date("09/01/2022 09:01:00");/*---这里是网站的启用时间--*/
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "⏱️本站已稳定运行"+dnum+"天";
+        document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+    }
+    setInterval("createtime()",250); 
+</script> 
+<script src="static/js/sweetalert.min.js"></script>
+<script>
+    let password = "886";
+    if (localStorage.getItem('pan_password') == password) {
+ 
+    } else {
+        checkPassword("success", "输入密码进入")
+    }
+ 
+    function checkPassword(ic, ti) {
+        // Add no-scroll class to body to prevent scrolling
+        document.body.classList.add("no-scroll");
+        
+        swal({
+            title: "提示",
+            text: "本站所展示内容均收集于网络\n仅供本人学习研究及收藏存档\n如有侵犯权益，敬请联系删除\n",
+            html: 'true',
+            closeOnConfirm: false,
+            closeOnClickOutside: false,
+            icon: ic,
+            buttons: {
+                confirm: {
+                    text: "确认访问",
+                    value: "confirm",
+                    className: "custom-swal-button swal-button--confirm"
+                },
+                copy: {
+                    text: "获取密码",
+                    value: "copy_mini_program",
+                    className: "custom-swal-button swal-button--copy"
+                },
+                joinQQ: {
+                    text: "免费体验",
+                    value: "join_qq_group",
+                    className: "custom-swal-button swal-button--joinQQ"
+                },
+            },
+            content: {
+                element: "input",
+                attributes: {
+                    placeholder: "请输入访问密码", // Changed text here
+                    type: "password",
+                },
+            },
+        })
+        .then((value) => {
+            // Remove no-scroll class to allow scrolling again
+            document.body.classList.remove("no-scroll");
+                
+            if (value === '') {
+                checkPassword("warning", "请输入正确的密码");
+            } else if (value === password) {
+                swal("欢迎！使用小白网盘", {
+                    button: false,
+                });
+                localStorage.setItem("pan_password", value);
+            } else {
+                checkPassword("warning", "密码错误");
+            }
+            // Handle custom button actions
+            if (value === "copy_mini_program") {
+                window.location.href = "https://afzs.yhios.cn/gzh/index.html";
+            } else if (value === "join_qq_group") {
+                window.location.href = "https://udid.yhios.cn/";
+            }
+        });
+    }
+</script>
+
+    <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-polyfill" data-src="/assets/polyfills-legacy.181125e6.js">!(function() {
+      var e = document.createElement('script')
+      e.src =  window.__dynamic_base__ + document.getElementById('vite-legacy-polyfill').getAttribute('data-src');
+      e.onload = function() {
+        System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+      };
+      document.body.appendChild(e)
+    })();</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/index-legacy.715da477.js"></script>
+  </span></center></body>
+</html>
